@@ -1,3 +1,4 @@
 *.swp
 *.swo
 .git
+node_modules/
