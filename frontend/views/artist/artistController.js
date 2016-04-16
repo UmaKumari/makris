@@ -71,7 +71,6 @@ app.controller('artistController', function($scope, $rootScope, $routeParams, fi
              "level" : 2
         }
     ];
-    $scope.artist = filterFilter($scope.aritsts, {id: $routeParams.aid})
     angular.forEach($scope.artists, function(key, value){
         if(key.id == $routeParams.aid){
             $scope.artist = key;
