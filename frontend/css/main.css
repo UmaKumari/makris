@@ -5,6 +5,21 @@ body {
     font-family: 'Dosis', sans-serif;
 }
 
+*::-webkit-input-placeholder {
+    color: red;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: red;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: red;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: red;
+}
 .panel-image {
     position: relative;   
 }
@@ -35,6 +50,16 @@ body {
     left: 0px;
     height: 100%;
     width: 100%;
+}
+.searchbox {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: white;
+    font-weight: bold;
 }
 
 .panel-heading ~ .panel-image img.panel-image-preview {

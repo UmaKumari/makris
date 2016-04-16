@@ -9,9 +9,11 @@
                 <h6>{{ artist.name }}</h6>
                 <h6>{{ artist.story }}</h6>
                 <h6><a href="#">{{ lang.more }}</a></h6>
+                <button class="btn btn-success">follow the artist</button>
             </div>
             <div class="col-xs-3 col-md-3">
                 <br>
+                
                 <div class="row">
                     <div class="col-xs-2 col-md-2">
                         <i class="fa fa-check" ng-show="artist.level == 1"></i>
@@ -54,7 +56,7 @@
                     <a href="#download">{{ i.price }} $</a>
                     <a style="color: red;" ng-show="i.availability == 0">sold</a>
                     <a href="#facebook"><span class="fa fa-facebook"></span></a>
-                    <a href="#twitter"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-click="addWishlist(i)"><span class="fa fa-heart"></span></a>
                     <a ng-click="showInfos = !showInfos"><span class="fa fa-info"></span></a>
                     
                 </div>

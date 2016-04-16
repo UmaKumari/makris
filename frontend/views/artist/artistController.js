@@ -47,6 +47,50 @@ app.controller('artistController', function($scope, $rootScope, $routeParams, fi
                 "height" : "80",
                 "width" : "100",
                 "artist" : "1"
+            },
+            {
+                "id" : 5,
+                "name" : "Lai da spira",
+                "url" : "img/malik/1.jpg",
+                "price" : "1400",
+                "currency" : "CHF",
+                "availability" : "0",
+                "height" : "80",
+                "width" : "100",
+                "artist" : "2"
+            },
+            {
+                "id" : 6,
+                "name" : "Lai da spira",
+                "url" : "img/malik/2.jpg",
+                "price" : "1400",
+                "currency" : "CHF",
+                "availability" : "0",
+                "height" : "80",
+                "width" : "100",
+                "artist" : "2"
+            },
+            {
+                "id" : 7,
+                "name" : "Lai da spira",
+                "url" : "img/malik/3.jpg",
+                "price" : "1400",
+                "currency" : "CHF",
+                "availability" : "0",
+                "height" : "80",
+                "width" : "100",
+                "artist" : "2"
+            },
+            {
+                "id" : 7,
+                "name" : "Lai da spira",
+                "url" : "img/malik/4.jpg",
+                "price" : "1400",
+                "currency" : "CHF",
+                "availability" : "0",
+                "height" : "80",
+                "width" : "100",
+                "artist" : "2"
             }
         ];
      $scope.artists =  [
@@ -85,5 +129,8 @@ app.controller('artistController', function($scope, $rootScope, $routeParams, fi
     $scope.showPreview = function(image){
         $scope.curri = image;
         $('#imagePreview').modal('show');
+    };
+    $scope.addWishlist = function(image){
+        $rootScope.wishlist.push(image);
     }
 });

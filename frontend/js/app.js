@@ -24,7 +24,7 @@ app.config(function($routeProvider) {
 			})
         
             // route for the wishlist
-			.when('/wishlist/:wid', {
+			.when('/wishlist', {
 				templateUrl : 'views/wishlist/wishlist.html',
 				controller  : 'wishlistController'
 			})
@@ -46,6 +46,7 @@ app.run(function($rootScope, $http){
                 "locale" : "de_DE"
             }
     ];
+    $rootScope.wishlist = [];
     $rootScope.setLang = function(langcode){
         $http.get('../lang/' + langcode + '.json').success(function(data) {
            $rootScope.lang = data;
