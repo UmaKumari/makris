@@ -29,7 +29,7 @@
 <![endif]-->
 
 <!-- Our Website Content Goes Here -->
-<div ng-include='"templates/header.html"'></div>
+<div ng-show="header" ng-include='"templates/header.html"'></div>
 
 <div class="ind-color-lightblue" ng-view></div>
 <div ng-include='"templates/footer.html"'></div>
