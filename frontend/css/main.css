@@ -1,6 +1,10 @@
 @import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,500);
 
+body {
+    font-family: 'Dosis', sans-serif;
+}
+
 .panel-image {
     position: relative;   
 }
@@ -70,7 +74,6 @@
     overflow: hidden;
     top: 0;
     left: 0;
-    font-family: 'Dosis', sans-serif;
 }
 .pointer {
     cursor: pointer;
