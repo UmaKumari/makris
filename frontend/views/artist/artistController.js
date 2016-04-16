@@ -1,7 +1,8 @@
-app.controller('artistController', function($scope, $rootScope) {
+app.controller('artistController', function($scope, $rootScope, $routeParams, filterFilter) {
 		// create a message to display in our view
         $rootScope.header = true;
-		$scope.images = [
+        $scope.images = [];
+		$scope.imageList = [
             {
                 "id" : 1,
                 "name" : "Falke",
@@ -48,16 +49,39 @@ app.controller('artistController', function($scope, $rootScope) {
                 "artist" : "1"
             }
         ];
-     $scope.artist =  {
-         "id" : 1,
-         "name" : "Fabian Koch",
-         "email" : "florentin@basler.io",
-         "origin" : "Schweiz",
-         "avatar_url" : "https://secure.gravatar.com/avatar/de9b11d0f9c0569ba917393ed5e5b3ab?s=140&r=g&d=mm",
-         "nickname" : "Fabian Koch",
-         "story" : "Hallo Mein Name ist Florentin Basler ich bin Kunststudent und fok....",
-         "level" : 2
-     };
+     $scope.artists =  [
+        {
+             "id" : 1,
+             "name" : "Fabian Koch",
+             "email" : "florentin@basler.io",
+             "origin" : "Schweiz",
+             "avatar_url" : "https://secure.gravatar.com/avatar/de9b11d0f9c0569ba917393ed5e5b3ab?s=140&r=g&d=mm",
+             "nickname" : "Fabian Koch",
+             "story" : "Hallo Mein Name ist Florentin Basler ich bin Kunststudent und fok....",
+             "level" : 2
+        },
+        {
+             "id" : 2,
+             "name" : "Malik",
+             "email" : "florentin@basler.io",
+             "origin" : "Schweiz",
+             "avatar_url" : "https://secure.gravatar.com/avatar/de9b11d0f9c0569ba917393ed5e5b3ab?s=140&r=g&d=mm",
+             "nickname" : "Malik",
+             "story" : "",
+             "level" : 2
+        }
+    ];
+    $scope.artist = filterFilter($scope.aritsts, {id: $routeParams.aid})
+    angular.forEach($scope.artists, function(key, value){
+        if(key.id == $routeParams.aid){
+            $scope.artist = key;
+        }
+    });
+    angular.forEach($scope.imageList, function(key, value){
+        if(key.artist == $routeParams.aid){
+            $scope.images.push(key);
+        }
+    });
     $scope.showPreview = function(image){
         $scope.curri = image;
         $('#imagePreview').modal('show');
