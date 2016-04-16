@@ -4,5 +4,7 @@
     "signin" : "Sign In",
     "wishlist" : "wishlist",
     "search" : "search",
-    "more" : "more ..."
+    "more" : "more ...",
+    "height" : "height",
+    "width" : "width"
 }

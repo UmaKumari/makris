@@ -1,4 +1,4 @@
-<div class="container" style="margin-top:10px;">
+<div class="container" style="margin-top:60px;">
     <div class="container-fluid well span12">
 	   <div class="row-fluid">
             <div class="col-xs-1 col-md-2" >
@@ -40,14 +40,14 @@
         </div>
     </div>
 	<div class="row form-group">
-        <div ng-repeat="i in images" class="col-xs-12 col-md-6">
+        <div ng-repeat="i in images" class="col-xs-12 col-md-6 max-size">
             <div class="panel panel-default">
-                <div class="panel-image hide-panel-body" ng-click="showPreview(i)">
-                    <img src="{{i.url}}" class="panel-image-preview" ng-click="showPreview(i)" />
+                <div class="panel-image hide-panel-body pointer" ng-click="showPreview(i)">
+                    <img src="{{i.url}}" class="panel-image-preview pointer" ng-click="showPreview(i)" />
                     <label ></label>
                 </div>
                 
-                <div class="panel-body">
+                <div ng-show="showInfos" class="panel-body">
                     <h4>{{ i.name }}</h4>
                 </div>
                 <div class="panel-footer text-center">
@@ -55,7 +55,7 @@
                     <a style="color: red;" ng-show="i.availability == 0">sold</a>
                     <a href="#facebook"><span class="fa fa-facebook"></span></a>
                     <a href="#twitter"><span class="fa fa-heart"></span></a>
-                    <a for="toggle-{{ i.id }}"><input type="checkbox" id="toggle-{{ i.id }}" class="panel-image-toggle"><span class="fa fa-info"></span></a>
+                    <a ng-click="showInfos = !showInfos"><span class="fa fa-info"></span></a>
                     
                 </div>
             </div>

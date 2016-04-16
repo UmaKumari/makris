@@ -4,6 +4,17 @@
 .panel-image {
     position: relative;   
 }
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
 .panel-image img.panel-image-preview {
     width: 100%;
 	border-radius: 4px 4px 0px 0px;
@@ -57,7 +68,9 @@
     right: 0;
     min-width: 100%;
 }
-
+.navbar-default .navbar-brand {
+    color: white;
+}
 
 .landing-header {
     text-align: center;
@@ -75,7 +88,13 @@
 .pointer {
     cursor: pointer;
 }
-
+.bg-lightgreen {
+    background-color: #18bc9c;
+    color: white;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
 .landing-content {
     background-color: white;
     top: 55%;

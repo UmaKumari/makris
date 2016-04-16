@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default bg-lightgreen navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -17,15 +17,20 @@
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="{{ lang.search }}">
+            <li>
+                <a href="#">
+                   <span ng-click="showsearch = !showsearch" ng-show="!showsearch" class="fa fa-search pointer"></span> 
+                </a>
+            </li>
+            <input placeholder="{{ lang.search }}" ng-show="showsearch" type="text" class="form-control" name="search" display="hidden"/>
         </div>
       </form>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right white">
         <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
         <li><a href="#">{{ lang.signin }}</a></li>
         <li><a href="#">{{ lang.signup }}</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe" aria-hidden="true"></i><span class="caret"></span></a>
+          <a class="dropdown-toggle pointer" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe" aria-hidden="true"></i><span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li ng-repeat="l in langs"><a ng-click="setLang(l.locale)">{{ l.name }}</a></li>
           </ul>

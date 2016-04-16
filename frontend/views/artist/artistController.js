@@ -1,5 +1,6 @@
-app.controller('artistController', function($scope) {
+app.controller('artistController', function($scope, $rootScope) {
 		// create a message to display in our view
+        $rootScope.header = true;
 		$scope.images = [
             {
                 "id" : 1,
@@ -9,7 +10,8 @@ app.controller('artistController', function($scope) {
                 "currency" : "CHF",
                 "availability" : "1",
                 "height" : "30",
-                "width" : "40"
+                "width" : "40",
+                "artist" : "1"
                 
             },
             {
@@ -20,7 +22,8 @@ app.controller('artistController', function($scope) {
                 "currency" : "CHF",
                 "availability" : "1",
                 "height" : "30",
-                "width" : "40"
+                "width" : "40",
+                "artist" : "1"
             },
             {
                 "id" : 3,
@@ -30,7 +33,8 @@ app.controller('artistController', function($scope) {
                 "currency" : "CHF",
                 "availability" : "1",
                 "height" : "100",
-                "width" : "100"
+                "width" : "100",
+                "artist" : "1"
             },
             {
                 "id" : 4,
@@ -40,7 +44,8 @@ app.controller('artistController', function($scope) {
                 "currency" : "CHF",
                 "availability" : "0",
                 "height" : "80",
-                "width" : "100"
+                "width" : "100",
+                "artist" : "1"
             }
         ];
      $scope.artist =  {
