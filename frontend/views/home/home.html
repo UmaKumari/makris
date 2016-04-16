@@ -2,8 +2,13 @@
     <div class="container">
         <div class="landing-header">
             <h1>MAKRIS</h1>
-            <h2>affordable unique art</h2>
-            <div class="landing-hr"></div>
+            <h2>unique affordable art</h2>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-4 input-group">
+                    <span ng-click="showsearch = !showsearch" ng-show="!showsearch" class="fa fa-search pointer"></span>
+                    <input ng-show="showsearch" type="text" class="form-control" name="search" display="hidden"/>
+                </div>
+            </div>
         </div>
     </div>
 </div>
