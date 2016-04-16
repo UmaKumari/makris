@@ -54,5 +54,7 @@ app.controller('homeController', function($scope, $rootScope, filterFilter) {
                 "artist" : "1"
             }
         ];
-
+        $scope.addWishlist = function(image){
+            $rootScope.wishlist.push(image);
+        }
 });

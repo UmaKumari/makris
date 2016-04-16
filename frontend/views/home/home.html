@@ -25,9 +25,8 @@
                     <a href="#download">{{ i.price }} $</a>
                     <a style="color: red;" ng-show="i.availability == 0">sold</a>
                     <a href="#facebook"><span class="fa fa-facebook"></span></a>
-                    <a href="#twitter"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-click="addWishlist(i)"><span class="fa fa-heart"></span></a>
                     <a ng-click="showInfos = !showInfos"><span class="fa fa-info"></span></a>
-                    
                 </div>
             </div>
         </div>
