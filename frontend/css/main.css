@@ -1,6 +1,10 @@
 @import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,500);
 
+body {
+    font-family: 'Dosis', sans-serif;
+}
+
 .panel-image {
     position: relative;   
 }
@@ -81,9 +85,8 @@
     z-index: 1;
     height: 50%;
     overflow: hidden;
-    top: 0;
+    top: 60px;
     left: 0;
-    font-family: 'Dosis', sans-serif;
 }
 .pointer {
     cursor: pointer;
@@ -97,7 +100,7 @@
 }
 .landing-content {
     background-color: white;
-    top: 55%;
+    top: 45%;
     min-height: 12%;
     position:absolute;
     z-index: 2;
@@ -111,4 +114,19 @@
 
 .landing-header h2 {
     font-size: 50px;
+}
+
+.landing-nav {
+    height: 60px;
+    color: white;
+	background: #18bc9c;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+    left: 0;
+    padding: 15px;
+}
+
+.landing-nav-right {
+    float: right;
 }
