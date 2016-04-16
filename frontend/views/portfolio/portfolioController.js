@@ -22,5 +22,14 @@ app.controller('portfolioController', function($scope) {
                 "currency" : "CHF",
                 "availability" : "0"
             }
-        ]
+        ];
+     $scope.user =  {
+         "id" : 1,
+         "name" : "Florentin Basler",
+         "email" : "florentin@basler.io",
+         "origin" : "Schweiz",
+         "avatar_url" : "https://secure.gravatar.com/avatar/de9b11d0f9c0569ba917393ed5e5b3ab?s=140&r=g&d=mm",
+         "nickname" : "Flash",
+         "story" : "Hallo Mein Name ist Florentin Basler ich bin Kunststudent und fok...."
+     };
 });
