@@ -17,7 +17,8 @@ app.controller('homeController', function($scope, $rootScope, filterFilter) {
                 "availability" : "1",
                 "height" : "80",
                 "width" : "100",
-                "artist" : "2"
+                "artist" : "2",
+                "love" : false
             },
             {
                 "id" : 6,
@@ -28,7 +29,8 @@ app.controller('homeController', function($scope, $rootScope, filterFilter) {
                 "availability" : "0",
                 "height" : "80",
                 "width" : "100",
-                "artist" : "2"
+                "artist" : "2",
+                "love" : false
             },
             {
                 "id" : 4,
@@ -39,7 +41,8 @@ app.controller('homeController', function($scope, $rootScope, filterFilter) {
                 "availability" : "1",
                 "height" : "80",
                 "width" : "100",
-                "artist" : "1"
+                "artist" : "1", 
+                "love" : false
             },
             {
                 "id": 19,
@@ -50,7 +53,8 @@ app.controller('homeController', function($scope, $rootScope, filterFilter) {
                 "availability": "1",
                 "height": "80",
                 "width": "50",
-                "artist": "3"
+                "artist": "3",
+                "love" : false
             },
             {
                 "id" : 7,
@@ -61,7 +65,8 @@ app.controller('homeController', function($scope, $rootScope, filterFilter) {
                 "availability" : "0",
                 "height" : "80",
                 "width" : "100",
-                "artist" : "2"
+                "artist" : "2",
+                "love" : false
             },
             {
                 "id" : 5,
@@ -72,7 +77,8 @@ app.controller('homeController', function($scope, $rootScope, filterFilter) {
                 "availability" : "0",
                 "height" : "80",
                 "width" : "100",
-                "artist" : "2"
+                "artist" : "2",
+                "love" : false
             },
             {
                 "id": 20,
@@ -83,7 +89,8 @@ app.controller('homeController', function($scope, $rootScope, filterFilter) {
                 "availability": "1",
                 "height": "80",
                 "width": "50",
-                "artist": "3"
+                "artist": "3",
+                "love" : false
             },
             {
                 "id" : 1,
@@ -94,7 +101,8 @@ app.controller('homeController', function($scope, $rootScope, filterFilter) {
                 "availability" : "0",
                 "height" : "30",
                 "width" : "40",
-                "artist" : "1"
+                "artist" : "1",
+                "love" : false
             },
             {
                 "id": 21,
@@ -105,7 +113,8 @@ app.controller('homeController', function($scope, $rootScope, filterFilter) {
                 "availability": "1",
                 "height": "90",
                 "width": "50",
-                "artist": "3"
+                "artist": "3",
+                "love" : false
             },
             {
                 "id" : 3,
@@ -116,7 +125,8 @@ app.controller('homeController', function($scope, $rootScope, filterFilter) {
                 "availability" : "1",
                 "height" : "100",
                 "width" : "100",
-                "artist" : "1"
+                "artist" : "1",
+                "love" : false
             },
             {
                 "id" : 4,
@@ -127,7 +137,8 @@ app.controller('homeController', function($scope, $rootScope, filterFilter) {
                 "availability" : "1",
                 "height" : "80",
                 "width" : "100",
-                "artist" : "1"
+                "artist" : "1",
+                "love" : false
             },
             {
                 "id" : 2,
@@ -138,7 +149,9 @@ app.controller('homeController', function($scope, $rootScope, filterFilter) {
                 "availability" : "0",
                 "height" : "30",
                 "width" : "40",
-                "artist" : "1"
+                "artist" : "1",
+                "love" : false
+
             }
         ];
         $scope.addWishlist = function(image){
