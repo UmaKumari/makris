@@ -9,6 +9,50 @@ app.controller('homeController', function($scope, $rootScope, filterFilter) {
         $scope.images = [];
 		$scope.imageList = [
             {
+                "id" : 6,
+                "name" : "Lai da spira",
+                "url" : "img/malik/2.jpg",
+                "price" : "1400",
+                "currency" : "CHF",
+                "availability" : "0",
+                "height" : "80",
+                "width" : "100",
+                "artist" : "2"
+            },
+            {
+                "id" : 4,
+                "name" : "Lai da spira",
+                "url" : "img/fabiankoch/4.jpg",
+                "price" : "1400",
+                "currency" : "CHF",
+                "availability" : "0",
+                "height" : "80",
+                "width" : "100",
+                "artist" : "1"
+            },
+            {
+                "id" : 7,
+                "name" : "Lai da spira",
+                "url" : "img/malik/3.jpg",
+                "price" : "1400",
+                "currency" : "CHF",
+                "availability" : "0",
+                "height" : "80",
+                "width" : "100",
+                "artist" : "2"
+            },
+            {
+                "id" : 7,
+                "name" : "Lai da spira",
+                "url" : "img/malik/4.jpg",
+                "price" : "1400",
+                "currency" : "CHF",
+                "availability" : "0",
+                "height" : "80",
+                "width" : "100",
+                "artist" : "2"
+            },
+            {
                 "id" : 1,
                 "name" : "Falke",
                 "url" : "img/fabiankoch/1.jpg",
@@ -39,17 +83,6 @@ app.controller('homeController', function($scope, $rootScope, filterFilter) {
                 "currency" : "CHF",
                 "availability" : "1",
                 "height" : "100",
-                "width" : "100",
-                "artist" : "1"
-            },
-            {
-                "id" : 4,
-                "name" : "Lai da spira",
-                "url" : "img/fabiankoch/4.jpg",
-                "price" : "1400",
-                "currency" : "CHF",
-                "availability" : "0",
-                "height" : "80",
                 "width" : "100",
                 "artist" : "1"
             }
