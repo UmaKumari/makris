@@ -9,7 +9,7 @@ app.controller('artistController', function($scope, $rootScope, $routeParams, fi
                 "url" : "img/fabiankoch/1.jpg",
                 "price" : "400",
                 "currency" : "CHF",
-                "availability" : "1",
+                "availability" : "0",
                 "height" : "30",
                 "width" : "40",
                 "artist" : "1"
@@ -21,7 +21,7 @@ app.controller('artistController', function($scope, $rootScope, $routeParams, fi
                 "url" : "img/fabiankoch/2.jpg",
                 "price" : "400",
                 "currency" : "CHF",
-                "availability" : "1",
+                "availability" : "0",
                 "height" : "30",
                 "width" : "40",
                 "artist" : "1"
@@ -43,7 +43,7 @@ app.controller('artistController', function($scope, $rootScope, $routeParams, fi
                 "url" : "img/fabiankoch/4.jpg",
                 "price" : "1400",
                 "currency" : "CHF",
-                "availability" : "0",
+                "availability" : "1",
                 "height" : "80",
                 "width" : "100",
                 "artist" : "1"
@@ -87,7 +87,7 @@ app.controller('artistController', function($scope, $rootScope, $routeParams, fi
                 "url" : "img/malik/4.jpg",
                 "price" : "1400",
                 "currency" : "CHF",
-                "availability" : "0",
+                "availability" : "1",
                 "height" : "80",
                 "width" : "100",
                 "artist" : "2"
