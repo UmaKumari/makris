@@ -91,6 +91,39 @@ app.controller('artistController', function($scope, $rootScope, $routeParams, fi
                 "height" : "80",
                 "width" : "100",
                 "artist" : "2"
+            },
+            {
+                "id": 19,
+                "name": "Signs",
+                "url": "img/flo/1.jpg",
+                "price": "600",
+                "currency": "CHF",
+                "availability": "1",
+                "height": "80",
+                "width": "50",
+                "artist": "3"
+            },
+            {
+                "id": 20,
+                "name": "Signs to Signs",
+                "url": "img/flo/2.jpg",
+                "price": "500",
+                "currency": "CHF",
+                "availability": "1",
+                "height": "80",
+                "width": "50",
+                "artist": "3"
+            },
+            {
+                "id": 21,
+                "name": "No Signs",
+                "url": "img/flo/3.jpg",
+                "price": "700",
+                "currency": "CHF",
+                "availability": "1",
+                "height": "90",
+                "width": "50",
+                "artist": "3"
             }
         ];
      $scope.artists =  [
@@ -107,6 +140,16 @@ app.controller('artistController', function($scope, $rootScope, $routeParams, fi
         {
              "id" : 2,
              "name" : "Malik",
+             "email" : "florentin@basler.io",
+             "origin" : "Schweiz",
+             "avatar_url" : "https://secure.gravatar.com/avatar/de9b11d0f9c0569ba917393ed5e5b3ab?s=140&r=g&d=mm",
+             "nickname" : "Malik",
+             "story" : "",
+             "level" : 2
+        },
+        {
+             "id" : 3,
+             "name" : "Flo",
              "email" : "florentin@basler.io",
              "origin" : "Schweiz",
              "avatar_url" : "https://secure.gravatar.com/avatar/de9b11d0f9c0569ba917393ed5e5b3ab?s=140&r=g&d=mm",
