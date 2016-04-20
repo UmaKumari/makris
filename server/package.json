@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "mongo db / REST API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faebzz/makris.git"
+  },
+  "author": "Fabian Schaper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faebzz/makris/issues"
+  },
+  "homepage": "https://github.com/faebzz/makris#readme"
+}

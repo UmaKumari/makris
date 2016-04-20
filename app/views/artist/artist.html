@@ -1,0 +1,88 @@
+<div class="container" style="margin-top:60px;">
+    <div class="container-fluid well span12">
+	   <div class="row-fluid">
+            <div class="col-xs-1 col-md-2" >
+                <img src="{{ artist.avatar_url }}" class="img-circle">
+            </div>
+            <div class="col-xs-8 col-md-7">
+                <h3>{{ artist.nickname }}</h3>
+                <h6>{{ artist.name }}</h6>
+                <h6>{{ artist.story }}</h6>
+                <h6><a href="#">{{ lang.more }}</a></h6>
+                <button class="btn btn-success">follow the artist</button>
+            </div>
+            <div class="col-xs-3 col-md-3">
+                <br>
+                
+                <div class="row">
+                    <div class="col-xs-2 col-md-2">
+                        <i class="fa fa-check" ng-show="artist.level == 1"></i>
+                    </div>
+                    <div class="col-xs-10 col-md-10">
+                        starter
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 col-md-2">
+                        <i class="fa fa-check" ng-show="artist.level == 2"></i>
+                    </div>
+                    <div class="col-xs-10 col-md-10">
+                        intermediate
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 col-md-2">
+                        <i class="fa fa-check" ng-show="artist.level == 3"></i>
+                    </div>
+                    <div class="col-xs-10 col-md-10">
+                        professional
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="row form-group">
+        <div ng-repeat="i in images" class="col-xs-12 col-md-6 max-size">
+            <div class="panel panel-default">
+                <div class="panel-image hide-panel-body pointer" ng-click="showPreview(i)">
+                    <img src="{{i.url}}" class="panel-image-preview pointer" ng-click="showPreview(i)" />
+                    <label ></label>
+                </div>
+                
+                <div ng-show="showInfos" class="panel-body">
+                    <h4>{{ i.name }}</h4>
+                    <h6>Size: {{ i.width }} x {{ i.height }}</h6>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="#download">{{ i.price }} $</a>
+                    <a style="color: red;" ng-show="i.availability == 0">sold</a>
+                    <a href="#facebook"><span class="fa fa-facebook"></span></a>
+                    <a class="pointer" style="color: red;" ng-show="i.love"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-show="!i.love" ng-click="i.love = !i.love; addWishlist(i)"><span class="fa fa-heart"></span></a>
+                    <a ng-click="showInfos = !showInfos"><span class="fa fa-info"></span></a>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+
+
+<div id="imagePreview" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">{{ curri.name }}</h4>
+      </div>
+      <div class="modal-body">
+        <img src="{{ curri.url }}" class="max-size" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
