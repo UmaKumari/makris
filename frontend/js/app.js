@@ -28,6 +28,10 @@ app.config(function($routeProvider) {
 				templateUrl : 'views/wishlist/wishlist.html',
 				controller  : 'wishlistController'
 			})
+            .when('/signup', {
+				templateUrl : 'views/signup/signup.html',
+				controller  : 'signupController'
+			})
         ;
 });
 app.run(function($rootScope, $http){
