@@ -1,0 +1,11 @@
+{
+    "version" : "0.0.1",
+    "APIVersion" : "0.0.1",
+    "DBType" : "mysql",
+    "DBHost" : "localhost",
+    "DBName" : "WORKPLACE",
+    "DBUser" : "root",
+    "DBPass" : "toor",
+    "logLevel" : 3,
+    "logFile" : "log/app.log"
+}

@@ -1,0 +1,16 @@
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-04-22T04:56:45.633Z"}
+{"level":"info","message":"socket.io listening on: 8081","timestamp":"2016-04-22T04:56:45.635Z"}
+{"level":"info","message":"post /artist","timestamp":"2016-04-22T04:57:22.921Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-04-22T04:58:48.866Z"}
+{"level":"info","message":"socket.io listening on: 8081","timestamp":"2016-04-22T04:58:48.869Z"}
+{"level":"info","message":"post /artist","timestamp":"2016-04-22T04:58:51.937Z"}
+{"level":"info","message":"{\"name\":\"Fabian Schaper\",\"artist_name\":\"fab\",\"img_url\":\"https://secure.gravatar.com/avatar/de9b11d0f9c0569ba917393ed5e5b3ab?s=140&r=g&d=mm\",\"email\":\"fabian@schaper.li\",\"password\":\"1234\",\"location\":\"Zurich\"}","timestamp":"2016-04-22T04:58:51.937Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-04-22T05:13:36.558Z"}
+{"level":"info","message":"socket.io listening on: 8081","timestamp":"2016-04-22T05:13:36.561Z"}
+{"level":"info","message":"post /artist","timestamp":"2016-04-22T05:13:42.170Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-04-22T05:15:31.511Z"}
+{"level":"info","message":"socket.io listening on: 8081","timestamp":"2016-04-22T05:15:31.516Z"}
+{"level":"info","message":"post /artist","timestamp":"2016-04-22T05:15:35.469Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-04-22T05:16:43.814Z"}
+{"level":"info","message":"socket.io listening on: 8081","timestamp":"2016-04-22T05:16:43.817Z"}
+{"level":"info","message":"post /artist","timestamp":"2016-04-22T05:16:47.812Z"}
