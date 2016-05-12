@@ -16,7 +16,7 @@
 #logbox {
   padding: 10px;
   margin: 50px auto;
-  width: 340px;
+  width: 440px;
   background-color: #fff;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
@@ -32,9 +32,6 @@ h1.sign {
   font-weight: 300;
 }
 
-h1, input {
-  font-family: "Open Sans", Helvetica, sans-serif;
-}
 
 .input {
   width: 75%;
@@ -58,6 +55,10 @@ h1, input {
 
 .pass:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+.form-title {
+    text-align: center;
 }
 
 .inputButton {
@@ -85,4 +86,20 @@ h1, input {
 }
 .inputButton:focus {
   outline: none;
+}
+.btn-xxl {
+  padding: 15px 20px;
+  font-size: 30px;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+.btn-xl {
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
 }

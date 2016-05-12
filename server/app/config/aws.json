@@ -1,0 +1,13 @@
+{
+    db : {
+        type : "mongodb",
+        url : "mongodb://localhost:2701/makris",
+        user : "",
+        pass : ""
+    },
+    api : {
+        type : "express",
+        url : "localhost",
+        port : "8080"
+    }
+}

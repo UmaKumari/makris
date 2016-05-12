@@ -1,4 +1,4 @@
-var app = angular.module('makris', ['ngRoute']);
+var app = angular.module('makris', ['ngRoute', 'angular.filter', 'ngToast', 'ngFileUpload', 'bootstrap-tagsinput']);
 /**
  * Configure the Routes
  */
@@ -16,12 +16,6 @@ app.config(function($routeProvider) {
 				templateUrl : 'views/artist/artist.html',
 				controller  : 'artistController'
 			})
-
-			// route for the portfolio
-			.when('/portfolio/:pid', {
-				templateUrl : 'views/portfolio/portfolio.html',
-				controller  : 'portfolioController'
-			})
         
             // route for the wishlist
 			.when('/wishlist', {
@@ -29,21 +23,30 @@ app.config(function($routeProvider) {
 				controller  : 'wishlistController'
 			})
             .when('/signup', {
-				templateUrl : 'views/signup/signup.html',
+				templateUrl : 'views/signup/artist/signup.html',
 				controller  : 'signupController'
 			})
             .when('/signin', {
 				templateUrl : 'views/signin/signin.html',
 				controller  : 'signinController'
 			})
+            .when('/admin', {
+				templateUrl : 'views/admin/admin.html',
+				controller  : 'adminController'
+			})
+            .otherwise('/')
         ;
 });
-app.run(function($rootScope, $http){
+app.run(function($rootScope, $http, DataService){
     //$rootScope.baseURL = 'http://grind.scrummy.org/api/v1';
+    $http.get('../config/config.json').success(function(data){
+        $rootScope.config = data;
+    });
     localStorage.setItem('uid', '1');
     $rootScope.loading = false;
     $rootScope.uid = '1';
     $rootScope.langCode = "en_EN";
+    $rootScope.baseURL = 'http://localhost:8080/api'
     $rootScope.langs = [
             {
                 "name" : "English",
@@ -54,7 +57,10 @@ app.run(function($rootScope, $http){
                 "locale" : "de_DE"
             }
     ];
-    $rootScope.wishlist = [];
+    $rootScope.inArray = function (item, array) {
+        return (-1 !== array.indexOf(item));
+    };
+    DataService.initWishlist();
     $rootScope.setLang = function(langcode){
         $http.get('../lang/' + langcode + '.json').success(function(data) {
            $rootScope.lang = data;

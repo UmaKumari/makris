@@ -1,0 +1,144 @@
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-08T07:06:02.000Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T07:34:56.096Z"}
+{"level":"info","message":"3","timestamp":"2016-05-08T07:34:56.098Z"}
+{"message":"Cast to ObjectId failed for value \"3\" at path \"_id\"","stack":"CastError: Cast to ObjectId failed for value \"3\" at path \"_id\"\n    at MongooseError.CastError (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/error/cast.js:19:11)\n    at ObjectId.cast (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/schema/objectid.js:147:13)\n    at ObjectId.castForQuery (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/schema/objectid.js:187:15)\n    at cast (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/cast.js:174:32)\n    at Query.cast (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/query.js:2575:10)\n    at Query.find (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/query.js:1087:10)\n    at Function.find (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/model.js:1154:13)\n    at /Users/fabian/dev/makris/server/app/routes/artist.js:135:20\n    at Layer.handle [as handle_request] (/Users/fabian/dev/makris/server/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/fabian/dev/makris/server/node_modules/express/lib/router/route.js:131:13)\n    at Route.dispatch (/Users/fabian/dev/makris/server/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/Users/fabian/dev/makris/server/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:277:22\n    at param (/Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:349:14)\n    at param (/Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:365:14)\n    at Function.process_params (/Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:410:3)","name":"CastError","kind":"ObjectId","value":"3","path":"_id","level":"error","timestamp":"2016-05-08T07:34:56.111Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T07:35:01.117Z"}
+{"level":"info","message":"2","timestamp":"2016-05-08T07:35:01.117Z"}
+{"message":"Cast to ObjectId failed for value \"2\" at path \"_id\"","stack":"CastError: Cast to ObjectId failed for value \"2\" at path \"_id\"\n    at MongooseError.CastError (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/error/cast.js:19:11)\n    at ObjectId.cast (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/schema/objectid.js:147:13)\n    at ObjectId.castForQuery (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/schema/objectid.js:187:15)\n    at cast (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/cast.js:174:32)\n    at Query.cast (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/query.js:2575:10)\n    at Query.find (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/query.js:1087:10)\n    at Function.find (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/model.js:1154:13)\n    at /Users/fabian/dev/makris/server/app/routes/artist.js:135:20\n    at Layer.handle [as handle_request] (/Users/fabian/dev/makris/server/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/fabian/dev/makris/server/node_modules/express/lib/router/route.js:131:13)\n    at Route.dispatch (/Users/fabian/dev/makris/server/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/Users/fabian/dev/makris/server/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:277:22\n    at param (/Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:349:14)\n    at param (/Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:365:14)\n    at Function.process_params (/Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:410:3)","name":"CastError","kind":"ObjectId","value":"2","path":"_id","level":"error","timestamp":"2016-05-08T07:35:01.119Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T07:35:12.896Z"}
+{"level":"info","message":"2","timestamp":"2016-05-08T07:35:12.897Z"}
+{"message":"Cast to ObjectId failed for value \"2\" at path \"_id\"","stack":"CastError: Cast to ObjectId failed for value \"2\" at path \"_id\"\n    at MongooseError.CastError (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/error/cast.js:19:11)\n    at ObjectId.cast (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/schema/objectid.js:147:13)\n    at ObjectId.castForQuery (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/schema/objectid.js:187:15)\n    at cast (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/cast.js:174:32)\n    at Query.cast (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/query.js:2575:10)\n    at Query.find (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/query.js:1087:10)\n    at Function.find (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/model.js:1154:13)\n    at /Users/fabian/dev/makris/server/app/routes/artist.js:135:20\n    at Layer.handle [as handle_request] (/Users/fabian/dev/makris/server/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/fabian/dev/makris/server/node_modules/express/lib/router/route.js:131:13)\n    at Route.dispatch (/Users/fabian/dev/makris/server/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/Users/fabian/dev/makris/server/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:277:22\n    at param (/Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:349:14)\n    at param (/Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:365:14)\n    at Function.process_params (/Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:410:3)","name":"CastError","kind":"ObjectId","value":"2","path":"_id","level":"error","timestamp":"2016-05-08T07:35:12.899Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T07:35:19.920Z"}
+{"level":"info","message":"1","timestamp":"2016-05-08T07:35:19.920Z"}
+{"message":"Cast to ObjectId failed for value \"1\" at path \"_id\"","stack":"CastError: Cast to ObjectId failed for value \"1\" at path \"_id\"\n    at MongooseError.CastError (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/error/cast.js:19:11)\n    at ObjectId.cast (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/schema/objectid.js:147:13)\n    at ObjectId.castForQuery (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/schema/objectid.js:187:15)\n    at cast (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/cast.js:174:32)\n    at Query.cast (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/query.js:2575:10)\n    at Query.find (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/query.js:1087:10)\n    at Function.find (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/model.js:1154:13)\n    at /Users/fabian/dev/makris/server/app/routes/artist.js:135:20\n    at Layer.handle [as handle_request] (/Users/fabian/dev/makris/server/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/fabian/dev/makris/server/node_modules/express/lib/router/route.js:131:13)\n    at Route.dispatch (/Users/fabian/dev/makris/server/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/Users/fabian/dev/makris/server/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:277:22\n    at param (/Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:349:14)\n    at param (/Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:365:14)\n    at Function.process_params (/Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:410:3)","name":"CastError","kind":"ObjectId","value":"1","path":"_id","level":"error","timestamp":"2016-05-08T07:35:19.921Z"}
+{"level":"info","message":"Session : 33d512e132c672c4d78d5065dca1529e quitted","timestamp":"2016-05-08T07:36:37.448Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T08:04:40.391Z"}
+{"level":"info","message":"1","timestamp":"2016-05-08T08:04:40.391Z"}
+{"message":"Cast to ObjectId failed for value \"1\" at path \"_id\"","stack":"CastError: Cast to ObjectId failed for value \"1\" at path \"_id\"\n    at MongooseError.CastError (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/error/cast.js:19:11)\n    at ObjectId.cast (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/schema/objectid.js:147:13)\n    at ObjectId.castForQuery (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/schema/objectid.js:187:15)\n    at cast (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/cast.js:174:32)\n    at Query.cast (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/query.js:2575:10)\n    at Query.find (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/query.js:1087:10)\n    at Function.find (/Users/fabian/dev/makris/server/node_modules/mongoose/lib/model.js:1154:13)\n    at /Users/fabian/dev/makris/server/app/routes/artist.js:135:20\n    at Layer.handle [as handle_request] (/Users/fabian/dev/makris/server/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/fabian/dev/makris/server/node_modules/express/lib/router/route.js:131:13)\n    at Route.dispatch (/Users/fabian/dev/makris/server/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/Users/fabian/dev/makris/server/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:277:22\n    at param (/Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:349:14)\n    at param (/Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:365:14)\n    at Function.process_params (/Users/fabian/dev/makris/server/node_modules/express/lib/router/index.js:410:3)","name":"CastError","kind":"ObjectId","value":"1","path":"_id","level":"error","timestamp":"2016-05-08T08:04:40.394Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T08:20:34.514Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-08T08:20:34.514Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T08:20:50.851Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-08T08:20:50.851Z"}
+{"level":"info","message":"Session : 33d512e132c672c4d78d5065dca1529e quitted","timestamp":"2016-05-08T08:21:47.007Z"}
+{"level":"info","message":"","timestamp":"2016-05-08T08:23:45.163Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T08:23:58.461Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T08:23:58.461Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T08:32:10.217Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T08:32:10.217Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T08:32:31.476Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T08:32:31.476Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T08:32:39.013Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T08:32:39.014Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T08:49:01.914Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T08:49:01.915Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-08T09:04:59.628Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:24:44.408Z"}
+{"level":"info","message":"572e3a0989ce1d40212f1588","timestamp":"2016-05-08T09:24:44.409Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:24:47.286Z"}
+{"level":"info","message":"572e39ea89ce1d40212f1587","timestamp":"2016-05-08T09:24:47.287Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:24:51.562Z"}
+{"level":"info","message":"572e3c4d89ce1d40212f158e","timestamp":"2016-05-08T09:24:51.562Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:24:57.182Z"}
+{"level":"info","message":"572e3d3089ce1d40212f158f","timestamp":"2016-05-08T09:24:57.182Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:25:53.368Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-08T09:25:53.369Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:25:56.838Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T09:25:56.839Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:26:01.525Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T09:26:01.527Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:28:47.715Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T09:28:47.716Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:29:10.954Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T09:29:10.954Z"}
+{"level":"info","message":"Session : 2147b5a461b4e4062dba9207dbde3d85 quitted","timestamp":"2016-05-08T09:29:41.246Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-08T09:31:19.344Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:31:46.643Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T09:31:46.643Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:32:56.669Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T09:32:56.669Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:35:10.865Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T09:35:10.866Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:35:43.036Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T09:35:43.036Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:36:22.901Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T09:36:22.901Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:52:09.512Z"}
+{"level":"info","message":"57279c21cedb98d0729d1984","timestamp":"2016-05-08T09:52:09.512Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:52:13.889Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T09:52:13.890Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:55:00.620Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T09:55:00.620Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:55:16.348Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T09:55:16.348Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T09:56:31.511Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T09:56:31.512Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T10:40:01.318Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T10:40:01.319Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T10:40:03.879Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T10:40:03.880Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T10:40:19.040Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T10:40:19.040Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-08T10:41:30.295Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T10:41:35.526Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T10:41:35.526Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T10:41:43.199Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T10:41:43.199Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T10:41:51.722Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T10:41:51.722Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T10:42:02.856Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T10:42:02.856Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T10:42:19.991Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T10:42:19.991Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T10:43:10.934Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T10:43:10.934Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T10:54:03.044Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T10:54:03.045Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T10:57:46.568Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T10:57:46.568Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:01:12.418Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T11:01:12.419Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:03:57.152Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T11:03:57.153Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:05:01.332Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T11:05:01.333Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:05:04.766Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T11:05:04.766Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:12:24.550Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T11:12:24.550Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:12:37.766Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T11:12:37.766Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T11:12:42.421Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:12:53.630Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T11:12:53.630Z"}
+{"level":"info","message":"Session : 2147b5a461b4e4062dba9207dbde3d85 quitted","timestamp":"2016-05-08T11:13:00.255Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:13:29.707Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T11:13:29.707Z"}
+{"level":"info","message":"sid: 572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T11:14:27.784Z"}
+{"story":"Pablo Macho is an autodidactic photographer born in Spain and lives in Zurich since 2004.\nSince the early childhood, he was always interested on photography and had a lot of art influences from his parents both professors of art and history.\nAs part of the Erasmus generation, the idea of overcoming borders and connecting Europe and the world was always something that motivated him.\nHe lived and travelled a in several countries where he had the opportunity to take pictures and play with the magic of light.\nHis work bring us a look in to a eclectic world where he combines light and forms that shows us the way he sees reality through the camera.\nIn such a way his works unfold a high artistic expressiveness in quite different genres, which reach from the figurative realism up to the surrealism and look, besides, at the reality as an abstract play of light, shade and tones.","level":"info","message":"","timestamp":"2016-05-08T11:14:27.790Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:14:55.480Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T11:14:55.481Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:15:09.029Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T11:15:09.029Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:15:26.156Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T11:15:26.156Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:15:49.283Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T11:15:49.283Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:15:57.766Z"}
+{"level":"info","message":"572ef79ef77a54813ecc1799","timestamp":"2016-05-08T11:15:57.767Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:15:59.688Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T11:15:59.688Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:16:53.127Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T11:16:53.127Z"}
+{"level":"info","message":"Session : a9c946f7fb0e75893f0ae9c7260a0bb1 quitted","timestamp":"2016-05-08T11:20:02.931Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:20:53.765Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T11:20:53.766Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-08T11:25:55.364Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:27:23.362Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T11:27:23.363Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:31:45.162Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T11:31:45.165Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-08T11:33:09.896Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T11:33:58.754Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T11:33:58.755Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-08T12:37:41.144Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-08T12:37:41.144Z"}

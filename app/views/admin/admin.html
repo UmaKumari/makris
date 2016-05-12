@@ -1,0 +1,45 @@
+<div class="container-fluid full-size" style="margin-top: 60px; background-color: white; height: 100%;">
+    <ul class="nav nav-pills" >
+      <li class="pointer" ng-class="{ active : adminmenu == 'messages' }">
+          <a ng-click="adminmenu = 'messages'">Messages</a>
+      </li>
+      <li class="pointer" ng-class="{ active : adminmenu == 'approvals' }">
+          <a ng-click="adminmenu = 'approvals'">Approvals</a>
+      </li>
+      <li class="pointer" ng-class="{ active : adminmenu == 'newsletter' }">
+          <a ng-click="adminmenu = 'newsletter'">Newsletter sign ups</a>
+      </li>
+    </ul>
+    <div class="content" ng-show="adminmenu == 'messages'">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>From</th><th>Message</th><th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="m in messages">
+                    <td>{{ m.from }}</td><td>{{ m.message }}</td><td>{{ m.ts }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="content" ng-show="adminmenu == 'approvals'">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Artist Name</th><th>E-Mail</th><th>Type</th><th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="aa in approvalartists">
+                    <td>{{ aa.first_name }} {{ aa.last_name }}</td>
+                    <td>{{ aa.email }}</td>
+                    <td>{{ aa.artist_type }}</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

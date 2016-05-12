@@ -1,0 +1,6 @@
+{
+    "version" : "1.0.0",
+    "name" : "makris Server",
+    "environment" : "fabian-nb.json",
+    "apibase" : "/api"
+}

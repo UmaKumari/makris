@@ -1,7 +1,6 @@
 {
   "name": "makris",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +17,20 @@
   "bugs": {
     "url": "https://github.com/faebzz/makris/issues"
   },
-  "homepage": "https://github.com/faebzz/makris#readme"
+  "homepage": "https://github.com/faebzz/makris#readme",
+  "dependencies": {
+    "angular-filter": "^0.5.8",
+    "angular-resource": "^1.5.3",
+    "angular-route": "^1.5.3",
+    "angular-sanitize": "^1.5.5",
+    "angular-ui-router": "^0.2.18",
+    "angularjs": "^0.0.1",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.1",
+    "jquery": "^2.2.3",
+    "ng-toast": "^2.0.0",
+    "ngtoast": "^2.0.1"
+  },
+  "devDependencies": {},
+  "description": ""
 }

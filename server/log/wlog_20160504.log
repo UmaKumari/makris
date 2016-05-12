@@ -1,0 +1,72 @@
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T04:47:49.440Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-04T04:48:15.521Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-04T04:48:15.522Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T04:49:12.299Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T04:53:37.066Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-04T04:54:57.511Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-04T04:54:57.511Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T04:55:09.115Z"}
+{"level":"info","message":"sid: 57279bb5cedb98d0729d197c","timestamp":"2016-05-04T04:55:19.189Z"}
+{"level":"info","message":"","timestamp":"2016-05-04T04:55:19.203Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-04T04:58:33.790Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-04T04:58:33.790Z"}
+{"level":"info","message":"sid: 57279bb5cedb98d0729d197c","timestamp":"2016-05-04T04:58:41.383Z"}
+{"story":"Hallo Welt","level":"info","message":"","timestamp":"2016-05-04T04:58:41.388Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-04T04:58:51.485Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-04T04:58:51.486Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-04T04:59:35.810Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-04T04:59:35.810Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-04T05:00:14.527Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-04T05:00:14.527Z"}
+{"level":"info","message":"Session : 33d512e132c672c4d78d5065dca1529e quitted","timestamp":"2016-05-04T05:00:53.430Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T05:21:22.646Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T05:22:23.189Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T05:23:12.070Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T05:36:52.356Z"}
+{"level":"info","message":"Session : 33d512e132c672c4d78d5065dca1529e quitted","timestamp":"2016-05-04T05:40:59.327Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T05:41:29.288Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T05:43:26.346Z"}
+{"level":"info","message":"","timestamp":"2016-05-04T05:43:29.799Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T05:45:18.697Z"}
+{"level":"info","message":"","timestamp":"2016-05-04T05:45:37.228Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T05:46:05.168Z"}
+{"level":"info","message":"","timestamp":"2016-05-04T05:46:08.918Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T05:47:23.138Z"}
+{"level":"info","message":"","timestamp":"2016-05-04T05:47:27.402Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T05:49:00.151Z"}
+{"0":{"$__":{"strictMode":true,"getters":{},"wasPopulated":false,"activePaths":{"paths":{"email":"init","created":"init","active":"init","confirmed":"init","admin":"init","approved":"init","following":"init","delivery.to":"init","skills":"init","story":"init","__v":"init","first_name":"init","last_name":"init","artist_type":"init","password":"init","_id":"init"},"states":{"ignore":{},"default":{},"init":{"story":true,"__v":true,"created":true,"active":true,"confirmed":true,"admin":true,"approved":true,"following":true,"delivery.to":true,"skills":true,"first_name":true,"last_name":true,"email":true,"artist_type":true,"password":true,"_id":true},"modify":{},"require":{}},"stateNames":["require","modify","init","default","ignore"]},"emitter":{"domain":null,"_events":{"save":[null,null,null,null,null,null],"isNew":[null,null,null,null,null,null]},"_eventsCount":2,"_maxListeners":0}},"isNew":false,"_doc":{"created":"2016-05-02T18:25:57.116Z","active":true,"confirmed":false,"admin":true,"approved":false,"following":[],"payment":{"paypal":{}},"delivery":{"to":[]},"skills":[],"story":"Hallo Welt","__v":0,"first_name":"Fabian","last_name":"Schaper","email":"fabian@schaper.li","artist_type":"HA","password":"81dc9bdb52d04dc20036dbd8313ed055","_id":{"_bsontype":"ObjectID","id":"W'µÎÛÐr\u0019|"}},"_pres":{"$__original_save":[null,null]},"_posts":{"$__original_save":[]}},"level":"info","message":"","timestamp":"2016-05-04T05:49:09.762Z"}
+{"level":"info","message":"","timestamp":"2016-05-04T05:49:14.826Z"}
+{"0":{"$__":{"strictMode":true,"getters":{},"wasPopulated":false,"activePaths":{"paths":{"email":"init","created":"init","active":"init","confirmed":"init","admin":"init","approved":"init","following":"init","delivery.to":"init","skills":"init","story":"init","__v":"init","first_name":"init","last_name":"init","artist_type":"init","password":"init","_id":"init"},"states":{"ignore":{},"default":{},"init":{"story":true,"__v":true,"created":true,"active":true,"confirmed":true,"admin":true,"approved":true,"following":true,"delivery.to":true,"skills":true,"first_name":true,"last_name":true,"email":true,"artist_type":true,"password":true,"_id":true},"modify":{},"require":{}},"stateNames":["require","modify","init","default","ignore"]},"emitter":{"domain":null,"_events":{"save":[null,null,null,null,null,null],"isNew":[null,null,null,null,null,null]},"_eventsCount":2,"_maxListeners":0}},"isNew":false,"_doc":{"created":"2016-05-02T18:25:57.116Z","active":true,"confirmed":false,"admin":true,"approved":false,"following":[],"payment":{"paypal":{}},"delivery":{"to":[]},"skills":[],"story":"Hallo Welt","__v":0,"first_name":"Fabian","last_name":"Schaper","email":"fabian@schaper.li","artist_type":"HA","password":"81dc9bdb52d04dc20036dbd8313ed055","_id":{"_bsontype":"ObjectID","id":"W'µÎÛÐr\u0019|"}},"_pres":{"$__original_save":[null,null]},"_posts":{"$__original_save":[]}},"level":"info","message":"","timestamp":"2016-05-04T05:50:33.167Z"}
+{"0":{"$__":{"strictMode":true,"getters":{},"wasPopulated":false,"activePaths":{"paths":{"email":"init","created":"init","active":"init","confirmed":"init","admin":"init","approved":"init","following":"init","delivery.to":"init","skills":"init","story":"init","__v":"init","first_name":"init","last_name":"init","artist_type":"init","password":"init","_id":"init"},"states":{"ignore":{},"default":{},"init":{"story":true,"__v":true,"created":true,"active":true,"confirmed":true,"admin":true,"approved":true,"following":true,"delivery.to":true,"skills":true,"first_name":true,"last_name":true,"email":true,"artist_type":true,"password":true,"_id":true},"modify":{},"require":{}},"stateNames":["require","modify","init","default","ignore"]},"emitter":{"domain":null,"_events":{"save":[null,null,null,null,null,null],"isNew":[null,null,null,null,null,null]},"_eventsCount":2,"_maxListeners":0}},"isNew":false,"_doc":{"created":"2016-05-02T18:25:57.116Z","active":true,"confirmed":false,"admin":true,"approved":false,"following":[],"payment":{"paypal":{}},"delivery":{"to":[]},"skills":[],"story":"Hallo Welt","__v":0,"first_name":"Fabian","last_name":"Schaper","email":"fabian@schaper.li","artist_type":"HA","password":"81dc9bdb52d04dc20036dbd8313ed055","_id":{"_bsontype":"ObjectID","id":"W'µÎÛÐr\u0019|"}},"_pres":{"$__original_save":[null,null]},"_posts":{"$__original_save":[]}},"level":"info","message":"","timestamp":"2016-05-04T05:50:46.865Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T06:49:22.342Z"}
+{"0":{"$__":{"strictMode":true,"getters":{},"wasPopulated":false,"activePaths":{"paths":{"email":"init","created":"init","active":"init","confirmed":"init","admin":"init","approved":"init","following":"init","delivery.to":"init","skills":"init","__v":"init","first_name":"init","last_name":"init","artist_type":"init","password":"init","_id":"init"},"states":{"ignore":{},"default":{},"init":{"__v":true,"created":true,"active":true,"confirmed":true,"admin":true,"approved":true,"following":true,"delivery.to":true,"skills":true,"first_name":true,"last_name":true,"email":true,"artist_type":true,"password":true,"_id":true},"modify":{},"require":{}},"stateNames":["require","modify","init","default","ignore"]},"emitter":{"domain":null,"_events":{"save":[null,null,null,null,null,null],"isNew":[null,null,null,null,null,null]},"_eventsCount":2,"_maxListeners":0}},"isNew":false,"_doc":{"created":"2016-05-02T18:27:45.881Z","active":true,"confirmed":false,"admin":true,"approved":false,"following":[],"payment":{"paypal":{}},"delivery":{"to":[]},"skills":[],"__v":0,"first_name":"Christiane","last_name":"Ernst","email":"christiane.ernst@gmail.com","artist_type":"HA","password":"81dc9bdb52d04dc20036dbd8313ed055","_id":{"_bsontype":"ObjectID","id":"W'!ÎÛÐr\u0019"}},"_pres":{"$__original_save":[null,null]},"_posts":{"$__original_save":[]}},"level":"info","message":"","timestamp":"2016-05-04T06:52:19.892Z"}
+{"0":{"$__":{"strictMode":true,"getters":{},"wasPopulated":false,"activePaths":{"paths":{"email":"init","created":"init","active":"init","confirmed":"init","admin":"init","approved":"init","following":"init","delivery.to":"init","skills":"init","__v":"init","first_name":"init","last_name":"init","artist_type":"init","password":"init","_id":"init"},"states":{"ignore":{},"default":{},"init":{"__v":true,"created":true,"active":true,"confirmed":true,"admin":true,"approved":true,"following":true,"delivery.to":true,"skills":true,"first_name":true,"last_name":true,"email":true,"artist_type":true,"password":true,"_id":true},"modify":{},"require":{}},"stateNames":["require","modify","init","default","ignore"]},"emitter":{"domain":null,"_events":{"save":[null,null,null,null,null,null],"isNew":[null,null,null,null,null,null]},"_eventsCount":2,"_maxListeners":0}},"isNew":false,"_doc":{"created":"2016-05-02T18:27:45.881Z","active":true,"confirmed":false,"admin":true,"approved":false,"following":[],"payment":{"paypal":{}},"delivery":{"to":[]},"skills":[],"__v":0,"first_name":"Christiane","last_name":"Ernst","email":"christiane.ernst@gmail.com","artist_type":"HA","password":"81dc9bdb52d04dc20036dbd8313ed055","_id":{"_bsontype":"ObjectID","id":"W'!ÎÛÐr\u0019"}},"_pres":{"$__original_save":[null,null]},"_posts":{"$__original_save":[]}},"level":"info","message":"","timestamp":"2016-05-04T06:52:20.061Z"}
+{"level":"info","message":"","timestamp":"2016-05-04T06:53:00.133Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-04T06:53:21.940Z"}
+{"level":"info","message":"57299c61c7d0639b09d5eb98","timestamp":"2016-05-04T06:53:21.940Z"}
+{"level":"info","message":"sid: 57299c61c7d0639b09d5eb98","timestamp":"2016-05-04T06:53:37.447Z"}
+{"story":"ich male gerne sonntags","level":"info","message":"","timestamp":"2016-05-04T06:53:37.459Z"}
+{"level":"info","message":"Session : 045a1e0f597d61944e2e78eb20a4bc6a quitted","timestamp":"2016-05-04T06:53:46.025Z"}
+{"level":"info","message":"Session : 33d512e132c672c4d78d5065dca1529e quitted","timestamp":"2016-05-04T06:54:45.418Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-04T06:59:37.063Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-04T06:59:37.063Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T07:02:37.232Z"}
+{"level":"info","message":"Session : 33d512e132c672c4d78d5065dca1529e quitted","timestamp":"2016-05-04T07:11:22.620Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T08:18:02.703Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T14:13:57.042Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T14:14:04.188Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-04T14:16:27.218Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-04T14:16:27.219Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-04T14:17:48.032Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-04T14:18:07.086Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-04T14:18:07.087Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-04T14:22:04.059Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-04T14:22:04.059Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-04T14:22:08.224Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-04T14:22:08.224Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-04T14:23:59.287Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-04T14:23:59.287Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-04T14:24:04.063Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-04T14:24:04.063Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-04T14:24:22.082Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-04T14:24:22.082Z"}

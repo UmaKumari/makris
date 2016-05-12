@@ -1,25 +1,74 @@
+<toast></toast>
 <div class="container-fluid">
     <div class="container">
-        <div class="landing-nav">
-            <ul class="nav navbar-nav navbar-right white landing-nav-right ">
-                <li class="dropdown pointer">
-                  <a class="dropdown-toggle pointer font-white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars fa-2x white" aria-hidden="true"></i></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#/signup">{{ lang.signup }}</a></li>
-                    <li><a href="#/signup">{{ lang.signin }}</a></li>
-                  </ul>
-                </li>
-            </ul>
-        </div>
         <div class="landing-header max-size">
             <img src="img/makris-logo-ent2.png" />
-            <h2>unique affordable art</h2>
+            <div style="margin-left: 20%; margin-right: 20%;"><div class="input-group custom-search-form">
+              <input type="text" placeholder="{{lang.whatareyoulookingfor}}" 
+                     ng-model="searchable" class="form-control">
+              <span class="input-group-btn">
+              <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+             </button>
+             </span>
+             </div><!-- /input-group -->
+            </div>
+             <div ng-show="searchable == 'photo'" class="filter-list" style="margin-left: 20%; margin-right: 20%;">
+                 <div ng-click="nature = !nature" class="filter-tag filter-size filter-item">
+                    nature
+                 </div>
+                 <div class="filter-tag filter-size filter-item">
+                    urban
+                 </div>
+                 <div class="filter-tag filter-size filter-item">
+                    portrait
+                 </div>
+                 <div class="filter-tag filter-size filter-item">
+                    architecture
+                 </div>
+                 <div class="filter-tag filter-size filter-item">
+                    artist
+                 </div>
+                 <div class="filter-tag filter-size filter-item">
+                    fashion
+                 </div>
+                 <div class="filter-tag filter-size filter-item">
+                    series
+                 </div>
+                 <div class="filter-tag filter-size filter-item">
+                    sports
+                 </div>
+                 <div class="filter-tag filter-size filter-item">
+                    events
+                 </div>
+                 <div class="filter-tag filter-size filter-item">
+                    established photographers
+                 </div>
+             </div>
         </div>
     </div>
 </div>
-<div class="container-fluid landing-content" style="margin-top:60px;">
-        <div ng-repeat="i in imageList" class="col-xs-12 col-md-6">
+<div class="container-fluid landing-content">
+    <div class="col-xs-6 col-md-6" ng-show="!nature">
+        <div ng-repeat="i in imageList" ng-hide="$index % 2 !== 0">
             <div class="panel panel-default">
+                <div class="panel-image hide-panel-body pointer">
+                    <a href="#/artist/572ef79ef77a54813ecc1799"><img src="{{i.src}}" class="panel-image-preview pointer"  /></a>
+                </div>
+                
+                <div ng-show="showInfos" class="panel-body">
+                    <h4>{{ i.name }}</h4>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="#download">{{ i.price }} $</a>
+                    <a style="color: red;" ng-show="i.availability == 0">sold</a>
+                    <a href="#facebook"><span class="fa fa-facebook"></span></a>
+                    <a class="pointer" style="color: red;" ng-show="i.love"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-show="!i.love" ng-click="i.love = !i.love; addWishlist(i)"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-click="showInfos = !showInfos"><span class="fa fa-info"></span></a>
+                </div>
+            </div>
+            <div class="panel panel-default" ng-show="">
                 <div class="panel-image hide-panel-body pointer">
                     <a href="#/artist/{{ i.artist }}"><img src="{{i.url}}" class="panel-image-preview pointer"  /></a>
                 </div>
@@ -37,8 +86,103 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="col-xs-6 col-md-6" ng-show="!nature">
+        <div ng-repeat="i in imageList" ng-hide="$index % 2 == 0" >
+            <div class="panel panel-default" >
+                <div class="panel-image hide-panel-body pointer">
+                    <a href="#/artist/{{ i.user }}"><img src="{{i.src}}" class="panel-image-preview pointer"  /></a>
+                </div>
+                
+                <div ng-show="showInfos" class="panel-body">
+                    <h4>{{ i.name }}</h4>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="#download">{{ i.price }} $</a>
+                    <a style="color: red;" ng-show="i.availability == 0">sold</a>
+                    <a href="#facebook"><span class="fa fa-facebook"></span></a>
+                    <a class="pointer" style="color: red;" ng-show="i.love"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-show="!i.love" ng-click="i.love = !i.love; addWishlist(i)"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-click="showInfos = !showInfos"><span class="fa fa-info"></span></a>
+                </div>
+            </div>
+            <div class="panel panel-default" ng-show="">
+                <div class="panel-image hide-panel-body pointer">
+                    <a href="#/artist/{{ i.artist }}"><img src="{{i.url}}" class="panel-image-preview pointer"  /></a>
+                </div>
+                
+                <div ng-show="showInfos" class="panel-body">
+                    <h4>{{ i.name }}</h4>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="#download">{{ i.price }} $</a>
+                    <a style="color: red;" ng-show="i.availability == 0">sold</a>
+                    <a href="#facebook"><span class="fa fa-facebook"></span></a>
+                    <a class="pointer" style="color: red;" ng-show="i.love"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-show="!i.love" ng-click="i.love = !i.love; addWishlist(i)"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-click="showInfos = !showInfos"><span class="fa fa-info"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 col-md-6" ng-show="nature">
+        <div ng-repeat="i in imageList" ng-show="i._id == '572e3c4d89ce1d40212f158e'">
+            <div class="panel panel-default" >
+                <div class="panel-image hide-panel-body pointer">
+                    <a href="#/artist/{{ i.user }}"><img src="{{i.src}}" class="panel-image-preview pointer"  /></a>
+                </div>
+                
+                <div ng-show="showInfos" class="panel-body">
+                    <h4>{{ i.name }}</h4>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="#download">{{ i.price }} $</a>
+                    <a style="color: red;" ng-show="i.availability == 0">sold</a>
+                    <a href="#facebook"><span class="fa fa-facebook"></span></a>
+                    <a class="pointer" style="color: red;" ng-show="i.love"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-show="!i.love" ng-click="i.love = !i.love; addWishlist(i)"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-click="showInfos = !showInfos"><span class="fa fa-info"></span></a>
+                </div>
+            </div>
+            <div class="panel panel-default" ng-show="">
+                <div class="panel-image hide-panel-body pointer">
+                    <a href="#/artist/{{ i.artist }}"><img src="{{i.url}}" class="panel-image-preview pointer"  /></a>
+                </div>
+                
+                <div ng-show="showInfos" class="panel-body">
+                    <h4>{{ i.name }}</h4>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="#download">{{ i.price }} $</a>
+                    <a style="color: red;" ng-show="i.availability == 0">sold</a>
+                    <a href="#facebook"><span class="fa fa-facebook"></span></a>
+                    <a class="pointer" style="color: red;" ng-show="i.love"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-show="!i.love" ng-click="i.love = !i.love; addWishlist(i)"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-click="showInfos = !showInfos"><span class="fa fa-info"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
+<!-- Modal -->
+<div class="modal fade" id="newsletterModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Signup for the newsletter</h4>
+        </div>
+        <div class="modal-body">
+          <form id="signup">
+              <input name="user" ng-model="nsl.email" type="email" placeholder="{{ lang.askemail }}" class="input pass"/>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" ng-click="signupNewsletter(nsl)">Signup</button>
+        </div>
+      </div>
+    </div>
+</div>
 
 <div id="imagePreview" class="modal fade" role="dialog">
   <div class="modal-dialog modal-lg">

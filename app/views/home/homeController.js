@@ -1,13 +1,20 @@
-app.controller('homeController', function($scope, $rootScope, filterFilter) {
-        $rootScope.header = false;
+app.controller('homeController', function($scope, $rootScope, DataService, APIService) {
         console.log("HALLO WELT");
 		// create a message to display in our view
 		$scope.message = 'home';
         $scope.list = {
             "name" : ""
         };
+        //$("#newsletterModal").modal('show');
+        if(!JSON.parse(localStorage.getItem('newsletter')) && !JSON.parse(localStorage.getItem('user'))){
+            $("#newsletterModal").modal('show');
+        }
+        $scope.imageList = [];
+        APIService.getArtworks().success(function(data){
+            $scope.imageList = data;
+        });
         $scope.images = [];
-		$scope.imageList = [
+		$scope.imageList1 = [
             {
                 "id" : 7,
                 "name" : "Lai da spira",
@@ -155,6 +162,14 @@ app.controller('homeController', function($scope, $rootScope, filterFilter) {
             }
         ];
         $scope.addWishlist = function(image){
-            $rootScope.wishlist.push(image);
+            DataService.addWishlist(image);
+        }
+        $scope.signupNewsletter = function(nl){
+            APIService.addNewsletter(nl).success(function(data){
+                if(data.code == '200'){
+                    $("#newsletterModal").modal('hide');
+                    localStorage.setItem('newsletter', JSON.stringify(nl));
+                }
+            });
         }
 });

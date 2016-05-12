@@ -1,0 +1,7 @@
+{
+    "baseURL" : "http://localhost:8080/api",
+    "uploadURL" : "http://localhost:8080/api/artwork/upload",
+    "uploadProfileURL" : "http://localhost:8080/api/artist/upload",
+    "defaultLanguage" : "en_EN",
+    "contactemail" : "fabian@schaper.li"
+}

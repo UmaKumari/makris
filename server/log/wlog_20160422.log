@@ -14,3 +14,5 @@
 {"level":"info","message":"Magic happens on port 8080","timestamp":"2016-04-22T05:16:43.814Z"}
 {"level":"info","message":"socket.io listening on: 8081","timestamp":"2016-04-22T05:16:43.817Z"}
 {"level":"info","message":"post /artist","timestamp":"2016-04-22T05:16:47.812Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-04-22T18:24:43.299Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-04-22T18:32:44.491Z"}

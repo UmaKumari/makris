@@ -1,57 +1,46 @@
+<toast></toast>
 <div class="container" style="margin-top:60px;">
     <div class="container-fluid well span12">
 	   <div class="row-fluid">
             <div class="col-xs-1 col-md-2" >
-                <img src="{{ artist.avatar_url }}" class="img-circle">
+                <img ng-show="artist.img_url" src="{{ artist.img_url }}" 
+                     class="img-circle" width="100" height="100">
+                <img ng-show="!artist.img_url" src="./img/profile.png" class="img-circle">
+                <a ng-show="artist._id == user._id" ngf-select="uploadProfilePic($file)">{{ lang.changeprofilepic }}</a>
             </div>
             <div class="col-xs-8 col-md-7">
-                <h3>{{ artist.nickname }}</h3>
+                <h3>{{ artist.first_name }} {{ artist.last_name }}</h3>
                 <h6>{{ artist.name }}</h6>
-                <h6>{{ artist.story }}</h6>
-                <h6><a href="#">{{ lang.more }}</a></h6>
-                <button class="btn btn-success">follow the artist</button>
-            </div>
-            <div class="col-xs-3 col-md-3">
-                <br>
+                <h6 ng-show="!editstory">{{ artist.story }}</h6>
+                <textarea ng-show="editstory" ng-model="artist.story" rows="4" cols="50">
+                    
+                </textarea>
+                <h6 ng-show="editstory"><a ng-click="updateStory()">{{ lang.save }}</a></h6>
+                <h6 ng-show="editstory" ng-click="editstory = !editstory">
+                    <a href="#">{{ lang.cancel }}</a>
+                </h6>
+                <h6 ng-show="!editstory"><a href="#">{{ lang.more }}</a></h6>
+                <h6 ng-show="artist._id == user._id && !editstory">
+                    <a ng-click="editstory = !editstory">{{ lang.edityourstory }}</a>
+                </h6>
+                <button ng-show="artist._id != user._id" 
+                        ng-click="follow(artist)" class="btn btn-success">{{ lang.followtheartist }}</button>
+                <button ng-show="artist._id == user._id" 
+                        ng-click="showUploadModal()" class="btn btn-success">{{ lang.uploadartwork }}</button>
                 
-                <div class="row">
-                    <div class="col-xs-2 col-md-2">
-                        <i class="fa fa-check" ng-show="artist.level == 1"></i>
-                    </div>
-                    <div class="col-xs-10 col-md-10">
-                        starter
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-2 col-md-2">
-                        <i class="fa fa-check" ng-show="artist.level == 2"></i>
-                    </div>
-                    <div class="col-xs-10 col-md-10">
-                        intermediate
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-2 col-md-2">
-                        <i class="fa fa-check" ng-show="artist.level == 3"></i>
-                    </div>
-                    <div class="col-xs-10 col-md-10">
-                        professional
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 	<div class="row form-group">
-        <div ng-repeat="i in images" class="col-xs-12 col-md-6 max-size">
+            <div class="col-xs-6 col-md-6">
+        <div ng-repeat="i in images" ng-show="$index % 2 == 0">
             <div class="panel panel-default">
-                <div class="panel-image hide-panel-body pointer" ng-click="showPreview(i)">
-                    <img src="{{i.url}}" class="panel-image-preview pointer" ng-click="showPreview(i)" />
-                    <label ></label>
+                <div class="panel-image hide-panel-body pointer">
+                    <a href="#/artist/572ef79ef77a54813ecc1799"><img src="{{i.src}}" class="panel-image-preview pointer"  /></a>
                 </div>
                 
                 <div ng-show="showInfos" class="panel-body">
                     <h4>{{ i.name }}</h4>
-                    <h6>Size: {{ i.width }} x {{ i.height }}</h6>
                 </div>
                 <div class="panel-footer text-center">
                     <a href="#download">{{ i.price }} $</a>
@@ -59,13 +48,134 @@
                     <a href="#facebook"><span class="fa fa-facebook"></span></a>
                     <a class="pointer" style="color: red;" ng-show="i.love"><span class="fa fa-heart"></span></a>
                     <a class="pointer" ng-show="!i.love" ng-click="i.love = !i.love; addWishlist(i)"><span class="fa fa-heart"></span></a>
-                    <a ng-click="showInfos = !showInfos"><span class="fa fa-info"></span></a>
+                    <a class="pointer" ng-click="showInfos = !showInfos"><span class="fa fa-info"></span></a>
+                </div>
+            </div>
+            <div class="panel panel-default" ng-show="">
+                <div class="panel-image hide-panel-body pointer">
+                    <a href="#/artist/{{ i.artist }}"><img src="{{i.url}}" class="panel-image-preview pointer"  /></a>
+                </div>
+                
+                <div ng-show="showInfos" class="panel-body">
+                    <h4>{{ i.name }}</h4>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="#download">{{ i.price }} $</a>
+                    <a style="color: red;" ng-show="i.availability == 0">sold</a>
+                    <a href="#facebook"><span class="fa fa-facebook"></span></a>
+                    <a class="pointer" style="color: red;" ng-show="i.love"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-show="!i.love" ng-click="i.love = !i.love; addWishlist(i)"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-click="showInfos = !showInfos"><span class="fa fa-info"></span></a>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="col-xs-6 col-md-6">
+        <div ng-repeat="i in images" ng-hide="$index % 2 == 0" >
+            <div class="panel panel-default" >
+                <div class="panel-image hide-panel-body pointer">
+                    <a href="#/artist/{{ i.user }}"><img src="{{i.src}}" class="panel-image-preview pointer"  /></a>
+                </div>
+                
+                <div ng-show="showInfos" class="panel-body">
+                    <h4>{{ i.name }}</h4>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="#download">{{ i.price }} $</a>
+                    <a style="color: red;" ng-show="i.availability == 0">sold</a>
+                    <a href="#facebook"><span class="fa fa-facebook"></span></a>
+                    <a class="pointer" style="color: red;" ng-show="i.love"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-show="!i.love" ng-click="i.love = !i.love; addWishlist(i)"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-click="showInfos = !showInfos"><span class="fa fa-info"></span></a>
+                </div>
+            </div>
+            <div class="panel panel-default" ng-show="">
+                <div class="panel-image hide-panel-body pointer">
+                    <a href="#/artist/{{ i.artist }}"><img src="{{i.url}}" class="panel-image-preview pointer"  /></a>
+                </div>
+                
+                <div ng-show="showInfos" class="panel-body">
+                    <h4>{{ i.name }}</h4>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="#download">{{ i.price }} $</a>
+                    <a style="color: red;" ng-show="i.availability == 0">sold</a>
+                    <a href="#facebook"><span class="fa fa-facebook"></span></a>
+                    <a class="pointer" style="color: red;" ng-show="i.love"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-show="!i.love" ng-click="i.love = !i.love; addWishlist(i)"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-click="showInfos = !showInfos"><span class="fa fa-info"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
 	</div>
 </div>
+<div id="imageUpload" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">{{ lang.uploadartwork }}</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-4">
+                <img ngf-src="file" 
+                     ngf-resize="{width: 150px, height: 80px, quality: 0.3}" style="max-width: 100%; max-height: 50%;"/><br>
+                <div class="button btn btn-info" ngf-select ng-model="file" name="file" ngf-pattern="'image/*'"
+                    ngf-accept="'image/*'" ngf-max-size="20MB" ngf-min-height="100" 
+                    >Select</div>
+                
+            </div>
+            <div class="col-xs-8">
+                <form id="signup">
+                        <input type="text" ng-model="img.title" 
+                               placeholder="{{ lang.imgtitle }}" autofocus="autofocus" 
+                               required="required" class="input pull-left"/>
+                        <input type="number" ng-model="img.price" 
+                               placeholder="{{ lang.price }}"
+                               autofocus="autofocus" required="required" class="input pass pull-left"/>
+                        <input name="user[email]" ng-model="img.height" type="number" 
+                               placeholder="{{ lang.height }}" class="input pass pull-left"/>
+                        <input ng-model="img.width" type="number" 
+                               placeholder="{{ lang.width }}" class="input pass pull-left"/>
+                        <input ng-model="img.availability" type="number" 
+                               placeholder="{{ lang.availability }}" class="input pass pull-left"/>
+                        <div class="form-group">
+                          <select ng-model="img.genre" class="form-control" id="sel1">
+                            <option>nature</option>
+                            <option>people</option>
+                            <option>urban</option>
+                            <option>abstract</option>
+                            <option>other</option>
+                          </select>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                          <select ng-model="img.type" class="form-control" id="sel1">
+                            <option>photography</option>
+                            <option>painting</option>
+                            <option>drawing</option>
+                            <option>digital</option>
+                            <option>print</option>
+                            <option>sculpture</option>
+                            <option>other</option>
+                          </select>
+                        </div>
+                </form>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" ng-click="uploadArtwork(file)" class="btn btn-default" >Upload</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <div id="imagePreview" class="modal fade" role="dialog">
   <div class="modal-dialog modal-lg">
@@ -77,7 +187,7 @@
         <h4 class="modal-title">{{ curri.name }}</h4>
       </div>
       <div class="modal-body">
-        <img src="{{ curri.url }}" class="max-size" />
+        <img src="{{ curri.src }}" class="max-size" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

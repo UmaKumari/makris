@@ -18,7 +18,9 @@
 
     <!-- Vendor: Bootstrap Stylesheets http://getbootstrap.com -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/bootstrap-tagsinput/src/bootstrap-tagsinput.css" rel="stylesheet">
     <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="node_modules/ng-toast/dist/ngToast.min.css" rel="stylesheet">
     <!-- Our Website CSS Styles -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/signup.css">
@@ -30,7 +32,7 @@
     <![endif]-->
 
     <!-- Our Website Content Goes Here -->
-    <div ng-show="header" ng-include='"templates/header.html"'></div>
+    <div ng-include='"templates/header.html"'></div>
 
     <div ng-view></div>
     <!-- Vendor: Javascripts -->
@@ -38,16 +40,25 @@
     <!-- Vendor: Angular, followed by our custom Javascripts -->
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+    <script src="node_modules/angular-filter/dist/angular-filter.min.js"></script>
+    <script src="node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="node_modules/ng-toast/dist/ngToast.min.js"></script>
+    <script src="node_modules/bootstrap-tagsinput/src/bootstrap-tagsinput-angular.js"></script>
+    <script src="node_modules/ng-file-upload/dist/ng-file-upload-all.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- Our JS Content -->
     <script src="js/app.js"></script>
+    <script src="js/services/APIService.js"></script>
+    <script src="js/services/DataService.js"></script>
+    <script src="templates/headerController.js"></script>
     <script src="views/home/homeController.js"></script>
-    <script src="views/portfolio/portfolioController.js"></script>
     <script src="views/artist/artistController.js"></script>
     <script src="views/wishlist/wishlistController.js"></script>
-    <script src="views/signup/signupController.js"></script>
+    <script src="views/signup/artist/signupController.js"></script>
     <script src="views/signin/signinController.js"></script>
+    <script src="views/admin/adminController.js"></script>
 
 </body>
 </html>

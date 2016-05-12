@@ -1,0 +1,37 @@
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-07T14:22:43.926Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-07T14:31:21.252Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-07T14:31:21.253Z"}
+{"level":"info","message":"Session : 33d512e132c672c4d78d5065dca1529e quitted","timestamp":"2016-05-07T14:31:37.822Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-07T14:31:50.239Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-07T14:31:50.240Z"}
+{"level":"info","message":"Session : 4d3606ec13d0f721c5e230cb238a1691 quitted","timestamp":"2016-05-07T17:43:59.272Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-07T17:46:00.619Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-07T17:46:00.620Z"}
+{"level":"info","message":"Session : 33d512e132c672c4d78d5065dca1529e quitted","timestamp":"2016-05-07T17:46:23.863Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-07T17:46:39.785Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-07T17:46:39.786Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-07T17:52:30.938Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-07T17:52:30.938Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-07T17:56:00.330Z"}
+{"level":"info","message":"572799979924ba9c70e0f38e","timestamp":"2016-05-07T17:56:00.331Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-07T17:56:10.137Z"}
+{"level":"info","message":"572799979924ba9c70e0f38e","timestamp":"2016-05-07T17:56:10.138Z"}
+{"level":"info","message":"Session : 4d3606ec13d0f721c5e230cb238a1691 quitted","timestamp":"2016-05-07T18:26:13.077Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-07T18:27:24.205Z"}
+{"level":"info","message":"57279c21cedb98d0729d1984","timestamp":"2016-05-07T18:27:24.206Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-07T18:33:38.700Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-07T18:49:35.682Z"}
+{"level":"info","message":"57279c21cedb98d0729d1984","timestamp":"2016-05-07T18:49:35.683Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-07T18:49:38.509Z"}
+{"level":"info","message":"57279c21cedb98d0729d1984","timestamp":"2016-05-07T18:49:38.510Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-07T18:51:46.918Z"}
+{"level":"info","message":"57279c21cedb98d0729d1984","timestamp":"2016-05-07T18:51:46.918Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-07T18:52:07.407Z"}
+{"level":"info","message":"57279c21cedb98d0729d1984","timestamp":"2016-05-07T18:52:07.407Z"}
+{"level":"info","message":"Session : eecd693fd11c288b279bc33c93923dbd quitted","timestamp":"2016-05-07T18:55:34.272Z"}
+{"level":"info","message":"","timestamp":"2016-05-07T19:02:05.601Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-07T19:02:19.296Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-07T19:02:19.296Z"}
+{"level":"info","message":"Session : a9c946f7fb0e75893f0ae9c7260a0bb1 quitted","timestamp":"2016-05-07T20:26:05.154Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-07T20:26:12.277Z"}
+{"level":"info","message":"572e3bbb89ce1d40212f158a","timestamp":"2016-05-07T20:26:12.277Z"}

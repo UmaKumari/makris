@@ -1,26 +1,12 @@
-<div class="container-fluid">
-    <div class="container">
-        <div class="landing-nav">
-            <ul class="nav navbar-nav navbar-right white landing-nav-right ">
-                <li class="dropdown pointer">
-                  <a class="dropdown-toggle pointer font-white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars fa-2x white" aria-hidden="true"></i></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#/signup">{{ lang.signup }}</a></li>
-                    <li><a href="#/signup">{{ lang.signin }}</a></li>
-                  </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
+<toast></toast>
 <div class="container">
     <div class="col-md-12">
         <div id="logbox">
-          <form id="signup" method="post" action="/signup">
+          <form id="signup">
             <h1>{{ lang.signin }}</h1>
-            <input name="user[email]" ng-model="artist.email" type="email" placeholder="{{ lang.askemail }}" class="input pass"/>
-            <input name="user[password]" ng-model="artist.password" type="password" placeholder="{{ lang.password }}" required="required" class="input pass"/>
-            <input type="submit" value="Sign me up!" class="inputButton"/>
+            <input name="user[email]" ng-model="lud.email" type="email" placeholder="{{ lang.askemail }}" class="input pass"/>
+            <input name="user[password]" ng-model="lud.password" type="password" placeholder="{{ lang.password }}" required="required" class="input pass"/>
+            <input type="button" ng-click="login(lud)" value="Sign in!" class="btn btn-xxl btn-success"/>
             <div class="text-center">
                 {{ lang.askforaccount }}<a href="#" id="login_id">{{ lang.signup }}</a>
             </div>

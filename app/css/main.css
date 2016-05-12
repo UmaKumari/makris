@@ -3,6 +3,10 @@
 
 body {
     font-family: 'Fauna One', serif;
+    background-color: #BFABA4;
+}
+.bg-brown {
+    background-color: #BFABA4;
 }
 
 *::-webkit-input-placeholder {
@@ -113,6 +117,7 @@ body {
   display: inline-block;
   vertical-align: top;
 }
+
 .landing-header {
     text-align: center;
     color: #fff;
@@ -170,7 +175,11 @@ body {
     left: 0;
     padding-right: 10px;
 }
-
+.navbar-default {
+    background: #BFABA4;
+    background-color: #BFABA4;
+    border: none;
+}
 .landing-nav-right {
     float: right;
 }
@@ -181,3 +190,39 @@ body {
     color: white;
     background-color: #BFABA4;
 }
+/* FILTER */
+.filter-list {
+    overflow: hidden;
+}
+.filter-item {
+    float: left;
+}
+.image-filter {
+    background-color: #BFABA4;
+    border-bottom-color: #BFABA4;
+    border-bottom-width: thick;
+}
+.filter-tag {
+    font-size: 25px;
+    border-radius: 4px;
+    border-width: 15px;
+    margin: 4px;
+    cursor: pointer;
+}
+.filter-size {
+    border-color: #dafeea;
+    background-color: #dafeea;
+    color: grey;
+    border-width: 20px;
+    text-align: center;
+}
+.filter-price {
+    border-color: lightcoral;
+    background-color: lightcoral;
+    text-align: center;
+}
+
+
+/*tiles*/
+
+

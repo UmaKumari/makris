@@ -1,178 +1,95 @@
-app.controller('artistController', function($scope, $rootScope, $routeParams, filterFilter) {
-		// create a message to display in our view
-        $rootScope.header = true;
-        $scope.images = [];
-		$scope.imageList = [
-            {
-                "id" : 1,
-                "name" : "Falke",
-                "url" : "img/fabiankoch/1.jpg",
-                "price" : "400",
-                "currency" : "CHF",
-                "availability" : "0",
-                "height" : "30",
-                "width" : "40",
-                "artist" : "1"
-                
-            },
-            {
-                "id" : 2,
-                "name" : "Widder",
-                "url" : "img/fabiankoch/2.jpg",
-                "price" : "400",
-                "currency" : "CHF",
-                "availability" : "0",
-                "height" : "30",
-                "width" : "40",
-                "artist" : "1"
-            },
-            {
-                "id" : 3,
-                "name" : "Tango",
-                "url" : "img/fabiankoch/3.jpg",
-                "price" : "1400",
-                "currency" : "CHF",
-                "availability" : "1",
-                "height" : "100",
-                "width" : "100",
-                "artist" : "1"
-            },
-            {
-                "id" : 4,
-                "name" : "Lai da spira",
-                "url" : "img/fabiankoch/4.jpg",
-                "price" : "1400",
-                "currency" : "CHF",
-                "availability" : "1",
-                "height" : "80",
-                "width" : "100",
-                "artist" : "1"
-            },
-            {
-                "id" : 5,
-                "name" : "Lai da spira",
-                "url" : "img/malik/1.jpg",
-                "price" : "1400",
-                "currency" : "CHF",
-                "availability" : "0",
-                "height" : "80",
-                "width" : "100",
-                "artist" : "2"
-            },
-            {
-                "id" : 6,
-                "name" : "Lai da spira",
-                "url" : "img/malik/2.jpg",
-                "price" : "1400",
-                "currency" : "CHF",
-                "availability" : "0",
-                "height" : "80",
-                "width" : "100",
-                "artist" : "2"
-            },
-            {
-                "id" : 7,
-                "name" : "Lai da spira",
-                "url" : "img/malik/3.jpg",
-                "price" : "1400",
-                "currency" : "CHF",
-                "availability" : "0",
-                "height" : "80",
-                "width" : "100",
-                "artist" : "2"
-            },
-            {
-                "id" : 7,
-                "name" : "Lai da spira",
-                "url" : "img/malik/4.jpg",
-                "price" : "1400",
-                "currency" : "CHF",
-                "availability" : "1",
-                "height" : "80",
-                "width" : "100",
-                "artist" : "2"
-            },
-            {
-                "id": 19,
-                "name": "Signs",
-                "url": "img/flo/1.jpg",
-                "price": "600",
-                "currency": "CHF",
-                "availability": "1",
-                "height": "80",
-                "width": "50",
-                "artist": "3"
-            },
-            {
-                "id": 20,
-                "name": "Signs to Signs",
-                "url": "img/flo/2.jpg",
-                "price": "500",
-                "currency": "CHF",
-                "availability": "1",
-                "height": "80",
-                "width": "50",
-                "artist": "3"
-            },
-            {
-                "id": 21,
-                "name": "No Signs",
-                "url": "img/flo/3.jpg",
-                "price": "700",
-                "currency": "CHF",
-                "availability": "1",
-                "height": "90",
-                "width": "50",
-                "artist": "3"
-            }
-        ];
-     $scope.artists =  [
-        {
-             "id" : 1,
-             "name" : "Fabian Koch",
-             "email" : "florentin@basler.io",
-             "origin" : "Schweiz",
-             "avatar_url" : "https://secure.gravatar.com/avatar/de9b11d0f9c0569ba917393ed5e5b3ab?s=140&r=g&d=mm",
-             "nickname" : "Fabian Koch",
-             "story" : "Hallo Mein Name ist Florentin Basler ich bin Kunststudent und fok....",
-             "level" : 2
-        },
-        {
-             "id" : 2,
-             "name" : "Malik",
-             "email" : "florentin@basler.io",
-             "origin" : "Schweiz",
-             "avatar_url" : "https://secure.gravatar.com/avatar/de9b11d0f9c0569ba917393ed5e5b3ab?s=140&r=g&d=mm",
-             "nickname" : "Malik",
-             "story" : "",
-             "level" : 2
-        },
-        {
-             "id" : 3,
-             "name" : "Flo",
-             "email" : "florentin@basler.io",
-             "origin" : "Schweiz",
-             "avatar_url" : "https://secure.gravatar.com/avatar/de9b11d0f9c0569ba917393ed5e5b3ab?s=140&r=g&d=mm",
-             "nickname" : "Malik",
-             "story" : "",
-             "level" : 2
-        }
-    ];
-    angular.forEach($scope.artists, function(key, value){
-        if(key.id == $routeParams.aid){
-            $scope.artist = key;
-        }
-    });
-    angular.forEach($scope.imageList, function(key, value){
-        if(key.artist == $routeParams.aid){
-            $scope.images.push(key);
-        }
+app.controller('artistController', function($scope, $rootScope, $routeParams, APIService, DataService, ngToast, Upload) {
+    // create a message to display in our view
+    $rootScope.header = true;
+    DataService.initController();
+    $scope.images = [];
+    APIService.getArtist($routeParams.aid).success(function(data){
+       console.log(JSON.stringify(data));
+       $scope.artist = data; 
+       APIService.getArtworksByArtist($scope.artist._id).success(function(data){
+           $scope.images = data;
+           console.log(JSON.stringify(data));
+       });
     });
     $scope.showPreview = function(image){
         $scope.curri = image;
         $('#imagePreview').modal('show');
     };
     $scope.addWishlist = function(image){
-        $rootScope.wishlist.push(image);
+        DataService.addWishlist(image);
+    };
+    $scope.showUploadModal = function() {
+        $('#imageUpload').modal('show');
+    };
+    $scope.follow = function(artist) {
+        APIService.followArtist(artist).success(function(data){
+            ngToast.create({
+                  className: 'success',
+                  content: data.message
+            });
+        });
     }
+    $scope.updateStory = function() {
+        APIService.updateArtist({ story : $scope.artist.story }).success(function(data){
+            $scope.editstory = false;
+            ngToast.create({
+                  className: 'success',
+                  content: data.message
+            });
+        });
+    };
+    $scope.uploadProfilePic = function (file) {
+        Upload.upload({
+            url: $rootScope.config.uploadProfileURL,
+            data: {
+                    file: file, 
+                    name: $scope.artist._id
+            }
+        }).then(function (resp) {
+            $('#imageUpload').modal('hide');
+            APIService.getArtworksByArtist($scope.artist._id).success(function(data){
+               $scope.images = data;
+           });
+            ngToast.create({
+                  className: 'success',
+                  content: $rootScope.lang.uploadsuccessful
+            });
+        }, function (resp) {
+            console.log('Error status: ' + resp.status);
+        }, function (evt) {
+            var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
+            console.log('progress: ' + progressPercentage + '% ' + evt.config.data.file.name);
+        });
+    };
+    $scope.uploadArtwork = function (file) {
+        Upload.upload({
+            url: $rootScope.config.uploadURL,
+            data: {
+                    file: file, 
+                    title: $scope.img.title, 
+                    user : $rootScope.user._id, 
+                    height :  $scope.img.height,
+                    width :  $scope.img.width,
+                    price :  $scope.img.price,
+                    type: $scope.img.type,
+                    genre : $scope.img.genre,
+                    availability : $scope.img.availability
+            
+                }
+        }).then(function (resp) {
+            $('#imageUpload').modal('hide');
+            APIService.getArtworksByArtist($scope.artist._id).success(function(data){
+               $scope.images = data;
+           });
+            ngToast.create({
+                  className: 'success',
+                  content: $rootScope.lang.uploadsuccessful
+            });
+        }, function (resp) {
+            console.log('Error status: ' + resp.status);
+        }, function (evt) {
+            var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
+            console.log('progress: ' + progressPercentage + '% ' + evt.config.data.file.name);
+        });
+    };
 });
