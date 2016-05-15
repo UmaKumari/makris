@@ -41,5 +41,6 @@
     "iaccept" : "I accept the submission agreement",
     "submission_agreement" : "Hello World",
     "send" : "Send",
-    "whatareyoulookingfor" : "What are you looking for? (e.g. photo, fine art, sculpture ...)"
+    "whatareyoulookingfor" : "What are you looking for? (e.g. photo, fine art, sculpture ...)",
+    "imgstory" : "tell us something about this artwork"
 }

@@ -10,6 +10,7 @@ var ArtworkSchema   = new Schema({
     availability: { type : Number },
     genre : { type : String },
     type : { type : String },
+    story : { type : String },
     tags : { type : [String]}, 
     created : { type : Date },
     ts : { type : Date, default : Date.now },

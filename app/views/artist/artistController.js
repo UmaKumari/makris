@@ -73,7 +73,8 @@ app.controller('artistController', function($scope, $rootScope, $routeParams, AP
                     price :  $scope.img.price,
                     type: $scope.img.type,
                     genre : $scope.img.genre,
-                    availability : $scope.img.availability
+                    availability : $scope.img.availability,
+                    story : $scope.img.story
             
                 }
         }).then(function (resp) {

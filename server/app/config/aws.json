@@ -2,8 +2,8 @@
     db : {
         type : "mongodb",
         url : "mongodb://localhost:2701/makris",
-        user : "",
-        pass : ""
+        user : "appadmin",
+        pass : "appadmin"
     },
     api : {
         type : "express",

@@ -1,0 +1,31 @@
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-13T15:11:59.849Z"}
+{"level":"info","message":"Magic happens on port 8080","timestamp":"2016-05-13T15:12:27.727Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-13T15:12:54.756Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-13T15:12:54.756Z"}
+{"level":"info","message":"Session : 33d512e132c672c4d78d5065dca1529e quitted","timestamp":"2016-05-13T15:13:14.027Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-13T15:13:18.945Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-13T15:13:18.945Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-13T15:14:21.971Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-13T15:14:21.972Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-14T12:43:07.464Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-14T12:43:07.465Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-15T09:08:17.174Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-15T09:08:17.174Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-15T09:08:37.251Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-15T09:08:37.251Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-15T09:08:52.490Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-15T09:08:52.490Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-15T09:10:29.125Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-15T09:10:29.125Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-15T09:11:47.193Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-15T09:11:47.193Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-15T09:12:08.255Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-15T09:12:08.256Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-15T09:12:12.246Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-15T09:12:12.247Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-15T09:12:27.399Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-15T09:12:27.399Z"}
+{"level":"info","message":"/artist/:uid","timestamp":"2016-05-15T09:12:52.398Z"}
+{"level":"info","message":"57279bb5cedb98d0729d197c","timestamp":"2016-05-15T09:12:52.398Z"}
+{"level":"info","message":"Session : 33d512e132c672c4d78d5065dca1529e quitted","timestamp":"2016-05-15T09:13:57.652Z"}
+{"level":"info","message":"Session : 33d512e132c672c4d78d5065dca1529e quitted","timestamp":"2016-05-15T09:25:25.762Z"}
