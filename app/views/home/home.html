@@ -53,7 +53,7 @@
         <div ng-repeat="i in imageList" ng-hide="$index % 2 !== 0">
             <div class="panel panel-default">
                 <div class="panel-image hide-panel-body pointer">
-                    <a href="#/artist/572ef79ef77a54813ecc1799"><img src="{{i.src}}" class="panel-image-preview pointer"  /></a>
+                    <a href="#/artist/{{ i.user }}"><img src="{{i.src}}" class="panel-image-preview pointer"  /></a>
                 </div>
                 
                 <div ng-show="showInfos" class="panel-body">
@@ -70,7 +70,7 @@
             </div>
             <div class="panel panel-default" ng-show="">
                 <div class="panel-image hide-panel-body pointer">
-                    <a href="#/artist/{{ i.artist }}"><img src="{{i.url}}" class="panel-image-preview pointer"  /></a>
+                    <a href="#/artist/{{ i.user }}"><img src="{{i.url}}" class="panel-image-preview pointer"  /></a>
                 </div>
                 
                 <div ng-show="showInfos" class="panel-body">
@@ -108,7 +108,7 @@
             </div>
             <div class="panel panel-default" ng-show="">
                 <div class="panel-image hide-panel-body pointer">
-                    <a href="#/artist/{{ i.artist }}"><img src="{{i.url}}" class="panel-image-preview pointer"  /></a>
+                    <a href="#/artist/{{ i.user }}"><img src="{{i.url}}" class="panel-image-preview pointer"  /></a>
                 </div>
                 
                 <div ng-show="showInfos" class="panel-body">
