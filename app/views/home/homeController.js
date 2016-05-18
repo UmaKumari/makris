@@ -167,8 +167,8 @@ app.controller('homeController', function($scope, $rootScope, DataService, APISe
         $scope.signupNewsletter = function(nl){
             APIService.addNewsletter(nl).success(function(data){
                 if(data.code == '200'){
-                    $("#newsletterModal").modal('hide');
                     localStorage.setItem('newsletter', JSON.stringify(nl));
+                    $("#newsletterModal").modal('hide');
                 }
             });
         }

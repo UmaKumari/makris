@@ -1,12 +1,14 @@
 {
     "title" : "makris",
     "signup" : "Sign Up",
+    "registerartist" : "Register artist",
+    "register" : "Register",
     "signin" : "Sign In",
     "wishlist" : "wishlist",
     "search" : "search",
     "more" : "more ...",
-    "height" : "height",
-    "width" : "width",
+    "height" : "height [cm]",
+    "width" : "width [cm]",
     "user" : "user",
     "artist" : "artist",
     "createaccount" : "create an account",
@@ -25,7 +27,7 @@
     "wronglogindata" : "Uups wrong email or password entered",
     "loginsuccessful" : "Login successful!",
     "post" : "post",
-    "price" : "price",
+    "price" : "price [CHF]",
     "imgtitle" : "title",
     "uploadsuccessful" : "Image upload successful!",
     "availability" : "availability",
@@ -42,5 +44,7 @@
     "submission_agreement" : "Hello World",
     "send" : "Send",
     "whatareyoulookingfor" : "What are you looking for? (e.g. photo, fine art, sculpture ...)",
-    "imgstory" : "tell us something about this artwork"
+    "imgstory" : "tell us something about this artwork",
+    "signupnewsletter" : "Sign Up for for our Newsletter",
+    "contactus" : "Any questions? Feel free to contact us."
 }

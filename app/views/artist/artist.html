@@ -19,7 +19,6 @@
                 <h6 ng-show="editstory" ng-click="editstory = !editstory">
                     <a href="#">{{ lang.cancel }}</a>
                 </h6>
-                <h6 ng-show="!editstory"><a href="#">{{ lang.more }}</a></h6>
                 <h6 ng-show="artist._id == user._id && !editstory">
                     <a ng-click="editstory = !editstory">{{ lang.edityourstory }}</a>
                 </h6>
@@ -70,9 +69,9 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-6 col-md-6">
-        <div ng-repeat="i in images" ng-hide="$index % 2 == 0" >
-            <div class="panel panel-default" >
+    <div class="col-xs-4 col-md-4">
+        <div ng-repeat="i in images" ng-show="$index % 2 !== 0 && $index % 3 !== 0">
+            <div class="panel panel-default">
                 <div class="panel-image hide-panel-body pointer">
                     <a href="#/artist/{{ i.user }}"><img src="{{i.src}}" class="panel-image-preview pointer"  /></a>
                 </div>
@@ -91,11 +90,93 @@
             </div>
             <div class="panel panel-default" ng-show="">
                 <div class="panel-image hide-panel-body pointer">
-                    <a href="#/artist/{{ i.artist }}"><img src="{{i.url}}" class="panel-image-preview pointer"  /></a>
+                    <a href="#/artist/{{ i.user }}"><img src="{{i.url}}" class="panel-image-preview pointer"  /></a>
                 </div>
                 
                 <div ng-show="showInfos" class="panel-body">
-                    <h4>{{ i.name }}</h4>
+                    <h4>{{ i.title }}</h4>
+                    <h4>{{ i.width }} cm x {{ i.height }} cm</h4>
+                    <h5>{{ i.story }}</h5>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="#download">{{ i.price }} $</a>
+                    <a style="color: red;" ng-show="i.availability == 0">sold</a>
+                    <a href="#facebook"><span class="fa fa-facebook"></span></a>
+                    <a class="pointer" style="color: red;" ng-show="i.love"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-show="!i.love" ng-click="i.love = !i.love; addWishlist(i)"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-click="showInfos = !showInfos"><span class="fa fa-info"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-4 col-md-4">
+        <div ng-repeat="i in images" ng-show="$index % 2 == 0 && $index % 3 !== 0" >
+            <div class="panel panel-default" >
+                <div class="panel-image hide-panel-body pointer">
+                    <a href="#/artist/{{ i.user }}"><img src="{{i.src}}" class="panel-image-preview pointer"  /></a>
+                </div>
+                
+                <div ng-show="showInfos" class="panel-body">
+                    <h4>{{ i.title }}</h4>
+                    <h4>{{ i.width }} cm x {{ i.height }} cm</h4>
+                    <h5>{{ i.story }}</h5>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="#download">{{ i.price }} $</a>
+                    <a style="color: red;" ng-show="i.availability == 0">sold</a>
+                    <a href="#facebook"><span class="fa fa-facebook"></span></a>
+                    <a class="pointer" style="color: red;" ng-show="i.love"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-show="!i.love" ng-click="i.love = !i.love; addWishlist(i)"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-click="showInfos = !showInfos"><span class="fa fa-info"></span></a>
+                </div>
+            </div>
+            <div class="panel panel-default" ng-show="">
+                <div class="panel-image hide-panel-body pointer">
+                    <a href="#/artist/{{ i.user }}"><img src="{{i.url}}" class="panel-image-preview pointer"  /></a>
+                </div>
+                
+                <div ng-show="showInfos" class="panel-body">
+                    <h4>{{ i.title }}</h4>
+                    <h4>{{ i.width }} cm x {{ i.height }} cm</h4>
+                    <h5>{{ i.story }}</h5>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="#download">{{ i.price }} $</a>
+                    <a style="color: red;" ng-show="i.availability == 0">sold</a>
+                    <a href="#facebook"><span class="fa fa-facebook"></span></a>
+                    <a class="pointer" style="color: red;" ng-show="i.love"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-show="!i.love" ng-click="i.love = !i.love; addWishlist(i)"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-click="showInfos = !showInfos"><span class="fa fa-info"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-4 col-md-4">
+        <div ng-repeat="i in images" ng-show="$index % 2 !== 0 && $index % 3 == 0" >
+            <div class="panel panel-default" >
+                <div class="panel-image hide-panel-body pointer">
+                    <a href="#/artist/{{ i.user }}"><img src="{{i.src}}" class="panel-image-preview pointer"  /></a>
+                </div>
+                
+                <div ng-show="showInfos" class="panel-body">
+                    <h4>{{ i.title }}</h4>
+                </div>
+                <div class="panel-footer text-center">
+                    <a href="#download">{{ i.price }} $</a>
+                    <a style="color: red;" ng-show="i.availability == 0">sold</a>
+                    <a href="#facebook"><span class="fa fa-facebook"></span></a>
+                    <a class="pointer" style="color: red;" ng-show="i.love"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-show="!i.love" ng-click="i.love = !i.love; addWishlist(i)"><span class="fa fa-heart"></span></a>
+                    <a class="pointer" ng-click="showInfos = !showInfos"><span class="fa fa-info"></span></a>
+                </div>
+            </div>
+            <div class="panel panel-default" ng-show="">
+                <div class="panel-image hide-panel-body pointer">
+                    <a href="#/artist/{{ i.user }}"><img src="{{i.url}}" class="panel-image-preview pointer"  /></a>
+                </div>
+                
+                <div ng-show="showInfos" class="panel-body">
+                    <h4>{{ i.title }}</h4>
                 </div>
                 <div class="panel-footer text-center">
                     <a href="#download">{{ i.price }} $</a>
